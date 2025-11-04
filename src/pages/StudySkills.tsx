@@ -41,6 +41,24 @@ const articles = [
     duration: "15 min read",
     source: "Learning Center",
   },
+  {
+    title: "Active Learning Techniques",
+    type: "Article",
+    duration: "8 min read",
+    source: "MIT OpenCourseWare",
+  },
+  {
+    title: "Mastering Study Habits",
+    type: "Course",
+    duration: "1.5 hours",
+    source: "edX",
+  },
+  {
+    title: "Note-Taking Strategies for College",
+    type: "Guide",
+    duration: "12 min read",
+    source: "Academic Success Center",
+  },
 ];
 
 const downloads = [
