@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Video, FileText, Download, Clock, ExternalLink } from "lucide-react";
+import { BookOpen, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "lucide-react";
 
 const videos = [
   {
@@ -70,7 +70,7 @@ const downloads = [
 
 export default function StudySkills() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="top">
       <Navigation />
 
       {/* Header */}
@@ -137,6 +137,15 @@ export default function StudySkills() {
               </Card>
             ))}
           </div>
+          
+          <div className="flex justify-center mt-8">
+            <a href="#top">
+              <Button variant="outline" className="gap-2">
+                <ArrowUp className="h-4 w-4" />
+                Back to Top
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -168,6 +177,15 @@ export default function StudySkills() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          <div className="flex justify-center mt-8">
+            <a href="#top">
+              <Button variant="outline" className="gap-2">
+                <ArrowUp className="h-4 w-4" />
+                Back to Top
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -202,6 +220,15 @@ export default function StudySkills() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          <div className="flex justify-center mt-8">
+            <a href="#top">
+              <Button variant="outline" className="gap-2">
+                <ArrowUp className="h-4 w-4" />
+                Back to Top
+              </Button>
+            </a>
           </div>
         </div>
       </section>
