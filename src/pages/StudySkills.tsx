@@ -97,7 +97,7 @@ export default function StudySkills() {
               </a>
               <a href="#courses">
                 <Button className="bg-gradient-green text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
-                  Courses & Articles
+                  Other Resources
                 </Button>
               </a>
             </div>
@@ -190,12 +190,12 @@ export default function StudySkills() {
         </div>
       </section>
 
-      {/* Courses & Articles */}
+      {/* Other Resources */}
       <section id="courses" className="py-16 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <FileText className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl font-bold text-foreground">Courses & Articles</h2>
+            <h2 className="text-3xl font-bold text-foreground">Other Resources</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
