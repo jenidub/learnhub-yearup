@@ -105,8 +105,40 @@ export default function StudySkills() {
         </div>
       </section>
 
-      {/* Courses & Articles */}
+      {/* Downloads */}
       <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-3 mb-8">
+            <Download className="h-8 w-8 text-primary" />
+            <h2 className="text-3xl font-bold text-foreground">Downloads</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {downloads.map((download) => (
+              <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <CardHeader>
+                  <div className="mb-3">
+                    <div className="h-16 w-16 bg-gradient-purple rounded-lg flex items-center justify-center">
+                      <FileText className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-base">{download.name}</CardTitle>
+                  <CardDescription>Format: {download.format}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Courses & Articles */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <FileText className="h-8 w-8 text-primary" />
@@ -131,38 +163,6 @@ export default function StudySkills() {
                   <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
                     Read More
                     <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Downloads */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-3 mb-8">
-            <Download className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl font-bold text-foreground">Downloadable Resources</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {downloads.map((download) => (
-              <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <CardHeader>
-                  <div className="mb-3">
-                    <div className="h-16 w-16 bg-gradient-purple rounded-lg flex items-center justify-center">
-                      <FileText className="h-8 w-8 text-white" />
-                    </div>
-                  </div>
-                  <CardTitle className="text-base">{download.name}</CardTitle>
-                  <CardDescription>Format: {download.format}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
                   </Button>
                 </CardContent>
               </Card>
