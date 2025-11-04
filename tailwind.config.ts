@@ -80,10 +80,41 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(10px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        },
+        "fade-in-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(20px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out",
+        "fade-in-up": "fade-in-up 0.6s ease-out",
+      },
+      backgroundImage: {
+        'gradient-purple': 'linear-gradient(135deg, hsl(var(--gradient-purple-from)), hsl(var(--gradient-purple-to)))',
+        'gradient-pink': 'linear-gradient(135deg, hsl(var(--gradient-pink-from)), hsl(var(--gradient-pink-to)))',
+        'gradient-blue': 'linear-gradient(135deg, hsl(var(--gradient-blue-from)), hsl(var(--gradient-blue-to)))',
+        'gradient-green': 'linear-gradient(135deg, hsl(var(--gradient-green-from)), hsl(var(--gradient-green-to)))',
+        'gradient-orange': 'linear-gradient(135deg, hsl(var(--gradient-orange-from)), hsl(var(--gradient-orange-to)))',
+        'gradient-teal': 'linear-gradient(135deg, hsl(var(--gradient-teal-from)), hsl(var(--gradient-teal-to)))',
+        'gradient-hero': 'linear-gradient(135deg, hsl(var(--gradient-hero-from)), hsl(var(--gradient-hero-to)))',
       },
     },
   },
