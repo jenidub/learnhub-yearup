@@ -56,6 +56,18 @@ export default function Navigation() {
               Home
             </Link>
 
+            <Link
+              to="/quick-start"
+              className={cn(
+                "px-3 py-2 rounded-md text-sm font-medium transition-colors",
+                location.pathname === "/quick-start"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary hover:text-primary"
+              )}
+            >
+              Quick Start
+            </Link>
+
             {/* Topics Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -108,7 +120,7 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {navItems.slice(1).map((item) => (
+            {navItems.slice(2).map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
@@ -152,6 +164,19 @@ export default function Navigation() {
                 Home
               </Link>
 
+              <Link
+                to="/quick-start"
+                onClick={() => setIsOpen(false)}
+                className={cn(
+                  "px-4 py-3 rounded-md text-sm font-medium transition-colors",
+                  location.pathname === "/quick-start"
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                )}
+              >
+                Quick Start
+              </Link>
+
               {/* Topics Section */}
               <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 Learning Topics
@@ -183,7 +208,7 @@ export default function Navigation() {
               })}
 
               {/* Other Nav Items */}
-              {navItems.slice(1).map((item) => (
+              {navItems.slice(2).map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
