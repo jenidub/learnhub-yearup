@@ -81,15 +81,32 @@ export default function StudySkills() {
               <BookOpen className="h-16 w-16 mx-auto" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Study Skills</h1>
-            <p className="text-xl text-white/90">
+            <p className="text-xl text-white/90 mb-8">
               Master effective study techniques and learning strategies to excel in your coursework
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a href="#quick-tips">
+                <Button className="bg-gradient-blue text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                  Quick Tips Videos
+                </Button>
+              </a>
+              <a href="#downloads">
+                <Button className="bg-gradient-pink text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                  Downloads
+                </Button>
+              </a>
+              <a href="#courses">
+                <Button className="bg-gradient-green text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                  Courses & Articles
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Quick Tips Videos */}
-      <section className="py-16">
+      <section id="quick-tips" className="py-16 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <Video className="h-8 w-8 text-primary" />
@@ -124,7 +141,7 @@ export default function StudySkills() {
       </section>
 
       {/* Downloads */}
-      <section className="py-16 bg-secondary/30">
+      <section id="downloads" className="py-16 bg-secondary/30 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <Download className="h-8 w-8 text-primary" />
@@ -156,7 +173,7 @@ export default function StudySkills() {
       </section>
 
       {/* Courses & Articles */}
-      <section className="py-16">
+      <section id="courses" className="py-16 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <FileText className="h-8 w-8 text-primary" />
