@@ -2,87 +2,87 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Video, FileText, Download, ExternalLink, ArrowUp } from "lucide-react";
+import { Lightbulb, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "lucide-react";
 
 const videos = [
   {
-    title: "The Pomodoro Technique Explained",
-    duration: "4 min",
-    description: "Learn how to use 25-minute focus sessions to boost productivity and maintain concentration.",
-  },
-  {
-    title: "Time Blocking for Students",
+    title: "Introduction to Critical Thinking",
     duration: "6 min",
-    description: "Master the art of scheduling your day in blocks for maximum efficiency and balance.",
+    description: "Understand the fundamentals of analyzing information objectively and making reasoned judgments.",
   },
   {
-    title: "Overcoming Procrastination",
+    title: "Problem-Solving Framework",
+    duration: "7 min",
+    description: "Learn a systematic approach to breaking down complex problems and finding solutions.",
+  },
+  {
+    title: "Identifying Logical Fallacies",
     duration: "8 min",
-    description: "Practical strategies to stop delaying important tasks and start taking action.",
+    description: "Recognize common errors in reasoning to strengthen your analytical skills.",
   },
 ];
 
 const articles = [
   {
-    title: "Time Management Mastery",
+    title: "Critical Thinking in Practice",
     type: "Course",
     duration: "2 hours",
-    source: "LinkedIn Learning",
-  },
-  {
-    title: "Priority Matrix Framework",
-    type: "Article",
-    duration: "10 min read",
-    source: "Harvard Business Review",
-  },
-  {
-    title: "Building Productive Habits",
-    type: "Guide",
-    duration: "12 min read",
-    source: "Productivity Center",
-  },
-  {
-    title: "Focus Apps and Tools Guide",
-    type: "Article",
-    duration: "8 min read",
-    source: "TechCrunch",
-  },
-  {
-    title: "Eliminating Time Wasters",
-    type: "Course",
-    duration: "1.5 hours",
     source: "Coursera",
   },
   {
-    title: "Weekly Planning Strategies",
+    title: "Decision-Making Strategies",
+    type: "Article",
+    duration: "12 min read",
+    source: "Harvard Business Review",
+  },
+  {
+    title: "Analytical Reasoning Guide",
     type: "Guide",
     duration: "15 min read",
-    source: "Academic Success Center",
+    source: "MIT OpenCourseWare",
+  },
+  {
+    title: "Creative Problem Solving",
+    type: "Article",
+    duration: "10 min read",
+    source: "Psychology Today",
+  },
+  {
+    title: "Logic and Reasoning Course",
+    type: "Course",
+    duration: "3 hours",
+    source: "Khan Academy",
+  },
+  {
+    title: "Systems Thinking Approach",
+    type: "Guide",
+    duration: "18 min read",
+    source: "Learning Center",
   },
 ];
 
 const downloads = [
-  { name: "Daily Time Blocking Template", format: "PDF" },
-  { name: "Weekly Schedule Planner", format: "Excel" },
-  { name: "Goal Setting Worksheet", format: "PDF" },
-  { name: "Productivity Tracker", format: "Excel" },
+  { name: "Decision Matrix Template", format: "Excel" },
+  { name: "Problem-Solving Framework", format: "PDF" },
+  { name: "Root Cause Analysis Template", format: "PDF" },
+  { name: "Critical Thinking Checklist", format: "PDF" },
 ];
 
-export default function TimeManagement() {
+export default function CriticalThinking() {
   return (
     <div className="min-h-screen bg-background" id="top">
       <Navigation />
 
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-orange text-white py-16">
+      <section className="relative overflow-hidden bg-gradient-green text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4 text-6xl">
-              <Clock className="h-16 w-16 mx-auto" />
+              <Lightbulb className="h-16 w-16 mx-auto" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Time Management</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Critical Thinking</h1>
             <p className="text-xl text-white/90 mb-8">
-              Optimize your schedule and boost productivity with proven time management strategies
+              Build analytical and problem-solving skills essential for academic and career success
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
@@ -91,12 +91,12 @@ export default function TimeManagement() {
                 </Button>
               </a>
               <a href="#downloads">
-                <Button className="bg-gradient-pink text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                <Button className="bg-gradient-purple text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Downloads
                 </Button>
               </a>
               <a href="#courses">
-                <Button className="bg-gradient-green text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                <Button className="bg-gradient-orange text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Other Resources
                 </Button>
               </a>
@@ -162,7 +162,7 @@ export default function TimeManagement() {
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="mb-3">
-                    <div className="h-16 w-16 bg-gradient-orange rounded-lg flex items-center justify-center">
+                    <div className="h-16 w-16 bg-gradient-green rounded-lg flex items-center justify-center">
                       <FileText className="h-8 w-8 text-white" />
                     </div>
                   </div>

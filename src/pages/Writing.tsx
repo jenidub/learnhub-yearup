@@ -2,59 +2,59 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Video, FileText, Download, ExternalLink, ArrowUp } from "lucide-react";
+import { MessageSquare, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "lucide-react";
 
 const videos = [
   {
-    title: "The Pomodoro Technique Explained",
-    duration: "4 min",
-    description: "Learn how to use 25-minute focus sessions to boost productivity and maintain concentration.",
+    title: "Writing Clear Thesis Statements",
+    duration: "5 min",
+    description: "Learn to craft strong, focused thesis statements that guide your essays effectively.",
   },
   {
-    title: "Time Blocking for Students",
+    title: "Professional Email Writing",
     duration: "6 min",
-    description: "Master the art of scheduling your day in blocks for maximum efficiency and balance.",
+    description: "Master the art of writing clear, professional emails for academic and workplace settings.",
   },
   {
-    title: "Overcoming Procrastination",
-    duration: "8 min",
-    description: "Practical strategies to stop delaying important tasks and start taking action.",
+    title: "Paragraph Structure and Flow",
+    duration: "7 min",
+    description: "Discover techniques to create well-organized paragraphs with smooth transitions.",
   },
 ];
 
 const articles = [
   {
-    title: "Time Management Mastery",
+    title: "Academic Writing Essentials",
     type: "Course",
-    duration: "2 hours",
+    duration: "2.5 hours",
+    source: "edX",
+  },
+  {
+    title: "Common Writing Mistakes to Avoid",
+    type: "Article",
+    duration: "10 min read",
+    source: "Purdue OWL",
+  },
+  {
+    title: "Effective Editing Strategies",
+    type: "Guide",
+    duration: "12 min read",
+    source: "Writing Center",
+  },
+  {
+    title: "Building Strong Arguments",
+    type: "Article",
+    duration: "8 min read",
+    source: "Harvard Writing Center",
+  },
+  {
+    title: "Business Communication Skills",
+    type: "Course",
+    duration: "1.5 hours",
     source: "LinkedIn Learning",
   },
   {
-    title: "Priority Matrix Framework",
-    type: "Article",
-    duration: "10 min read",
-    source: "Harvard Business Review",
-  },
-  {
-    title: "Building Productive Habits",
-    type: "Guide",
-    duration: "12 min read",
-    source: "Productivity Center",
-  },
-  {
-    title: "Focus Apps and Tools Guide",
-    type: "Article",
-    duration: "8 min read",
-    source: "TechCrunch",
-  },
-  {
-    title: "Eliminating Time Wasters",
-    type: "Course",
-    duration: "1.5 hours",
-    source: "Coursera",
-  },
-  {
-    title: "Weekly Planning Strategies",
+    title: "Citation and References Guide",
     type: "Guide",
     duration: "15 min read",
     source: "Academic Success Center",
@@ -62,31 +62,31 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Daily Time Blocking Template", format: "PDF" },
-  { name: "Weekly Schedule Planner", format: "Excel" },
-  { name: "Goal Setting Worksheet", format: "PDF" },
-  { name: "Productivity Tracker", format: "Excel" },
+  { name: "Essay Outline Template", format: "Word" },
+  { name: "Email Templates", format: "PDF" },
+  { name: "Revision Checklist", format: "PDF" },
+  { name: "Peer Review Checklist", format: "PDF" },
 ];
 
-export default function TimeManagement() {
+export default function Writing() {
   return (
     <div className="min-h-screen bg-background" id="top">
       <Navigation />
 
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-orange text-white py-16">
+      <section className="relative overflow-hidden bg-gradient-blue text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4 text-6xl">
-              <Clock className="h-16 w-16 mx-auto" />
+              <MessageSquare className="h-16 w-16 mx-auto" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Time Management</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Writing & Communication</h1>
             <p className="text-xl text-white/90 mb-8">
-              Optimize your schedule and boost productivity with proven time management strategies
+              Enhance your writing skills and professional communication abilities
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
-                <Button className="bg-gradient-blue text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                <Button className="bg-gradient-purple text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Quick Tips
                 </Button>
               </a>
@@ -162,7 +162,7 @@ export default function TimeManagement() {
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="mb-3">
-                    <div className="h-16 w-16 bg-gradient-orange rounded-lg flex items-center justify-center">
+                    <div className="h-16 w-16 bg-gradient-blue rounded-lg flex items-center justify-center">
                       <FileText className="h-8 w-8 text-white" />
                     </div>
                   </div>

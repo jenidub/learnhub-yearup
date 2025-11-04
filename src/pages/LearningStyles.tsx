@@ -2,59 +2,59 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Video, FileText, Download, ExternalLink, ArrowUp } from "lucide-react";
+import { Brain, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "lucide-react";
 
 const videos = [
   {
-    title: "The Pomodoro Technique Explained",
-    duration: "4 min",
-    description: "Learn how to use 25-minute focus sessions to boost productivity and maintain concentration.",
+    title: "Understanding Your Learning Style",
+    duration: "5 min",
+    description: "Discover the different learning styles and identify which methods work best for you.",
   },
   {
-    title: "Time Blocking for Students",
+    title: "Visual Learning Techniques",
     duration: "6 min",
-    description: "Master the art of scheduling your day in blocks for maximum efficiency and balance.",
+    description: "Learn strategies for visual learners including mind mapping and diagram creation.",
   },
   {
-    title: "Overcoming Procrastination",
+    title: "Study Strategies for Neurodivergent Learners",
     duration: "8 min",
-    description: "Practical strategies to stop delaying important tasks and start taking action.",
+    description: "Explore ADHD-friendly and neurodivergent study methods that enhance focus and retention.",
   },
 ];
 
 const articles = [
   {
-    title: "Time Management Mastery",
+    title: "Learning Styles Assessment",
     type: "Course",
-    duration: "2 hours",
-    source: "LinkedIn Learning",
-  },
-  {
-    title: "Priority Matrix Framework",
-    type: "Article",
-    duration: "10 min read",
-    source: "Harvard Business Review",
-  },
-  {
-    title: "Building Productive Habits",
-    type: "Guide",
-    duration: "12 min read",
-    source: "Productivity Center",
-  },
-  {
-    title: "Focus Apps and Tools Guide",
-    type: "Article",
-    duration: "8 min read",
-    source: "TechCrunch",
-  },
-  {
-    title: "Eliminating Time Wasters",
-    type: "Course",
-    duration: "1.5 hours",
+    duration: "1 hour",
     source: "Coursera",
   },
   {
-    title: "Weekly Planning Strategies",
+    title: "ADHD Study Strategies",
+    type: "Article",
+    duration: "12 min read",
+    source: "CHADD",
+  },
+  {
+    title: "Kinesthetic Learning Guide",
+    type: "Guide",
+    duration: "10 min read",
+    source: "Learning Center",
+  },
+  {
+    title: "Auditory Learning Techniques",
+    type: "Article",
+    duration: "8 min read",
+    source: "Education Corner",
+  },
+  {
+    title: "Neurodiversity in Education",
+    type: "Course",
+    duration: "2 hours",
+    source: "edX",
+  },
+  {
+    title: "Accommodations and Tools Guide",
     type: "Guide",
     duration: "15 min read",
     source: "Academic Success Center",
@@ -62,27 +62,27 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Daily Time Blocking Template", format: "PDF" },
-  { name: "Weekly Schedule Planner", format: "Excel" },
-  { name: "Goal Setting Worksheet", format: "PDF" },
-  { name: "Productivity Tracker", format: "Excel" },
+  { name: "Learning Style Quiz", format: "PDF" },
+  { name: "ADHD-Friendly Study Schedule", format: "Excel" },
+  { name: "Sensory Break Ideas", format: "PDF" },
+  { name: "Focus & Distraction Log", format: "PDF" },
 ];
 
-export default function TimeManagement() {
+export default function LearningStyles() {
   return (
     <div className="min-h-screen bg-background" id="top">
       <Navigation />
 
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-orange text-white py-16">
+      <section className="relative overflow-hidden bg-gradient-teal text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4 text-6xl">
-              <Clock className="h-16 w-16 mx-auto" />
+              <Brain className="h-16 w-16 mx-auto" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Time Management</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Learning Styles</h1>
             <p className="text-xl text-white/90 mb-8">
-              Optimize your schedule and boost productivity with proven time management strategies
+              Discover your unique learning style and access tailored strategies for success
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
@@ -91,12 +91,12 @@ export default function TimeManagement() {
                 </Button>
               </a>
               <a href="#downloads">
-                <Button className="bg-gradient-pink text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                <Button className="bg-gradient-purple text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Downloads
                 </Button>
               </a>
               <a href="#courses">
-                <Button className="bg-gradient-green text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
+                <Button className="bg-gradient-orange text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Other Resources
                 </Button>
               </a>
@@ -162,7 +162,7 @@ export default function TimeManagement() {
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <div className="mb-3">
-                    <div className="h-16 w-16 bg-gradient-orange rounded-lg flex items-center justify-center">
+                    <div className="h-16 w-16 bg-gradient-teal rounded-lg flex items-center justify-center">
                       <FileText className="h-8 w-8 text-white" />
                     </div>
                   </div>
