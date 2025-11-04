@@ -1,22 +1,23 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BookOpen, ChevronDown } from "lucide-react";
+import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
 const topicItems = [
-  { name: "Study Skills", path: "/study-skills" },
-  { name: "Test Prep", path: "/test-prep" },
-  { name: "Writing", path: "/writing" },
-  { name: "Critical Thinking", path: "/critical-thinking" },
-  { name: "Time Management", path: "/time-management" },
-  { name: "Learning Styles", path: "/learning-styles" },
+  { name: "Study Skills", path: "/study-skills", icon: BookOpen, gradient: "bg-gradient-purple" },
+  { name: "Test Prep", path: "/test-prep", icon: FileText, gradient: "bg-gradient-pink" },
+  { name: "Writing", path: "/writing", icon: MessageSquare, gradient: "bg-gradient-blue" },
+  { name: "Critical Thinking", path: "/critical-thinking", icon: Lightbulb, gradient: "bg-gradient-green" },
+  { name: "Time Management", path: "/time-management", icon: Clock, gradient: "bg-gradient-orange" },
+  { name: "Learning Styles", path: "/learning-styles", icon: Brain, gradient: "bg-gradient-teal" },
 ];
 
 const navItems = [
@@ -61,30 +62,49 @@ export default function Navigation() {
                 <Button
                   variant="ghost"
                   className={cn(
-                    "px-3 py-2 h-auto text-sm font-medium gap-1",
+                    "px-3 py-2 h-auto text-sm font-medium gap-1 transition-all duration-200",
                     topicItems.some(item => location.pathname === item.path)
                       ? "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground"
                       : "text-foreground hover:bg-secondary hover:text-primary"
                   )}
                 >
                   Topics
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-56 bg-card">
-                {topicItems.map((item) => (
-                  <DropdownMenuItem key={item.path} asChild>
-                    <Link
-                      to={item.path}
-                      className={cn(
-                        "cursor-pointer",
-                        location.pathname === item.path && "bg-secondary text-primary"
-                      )}
-                    >
-                      {item.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
+              <DropdownMenuContent align="start" className="w-64 bg-card border-border shadow-lg p-2 animate-fade-in">
+                <div className="px-2 py-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">
+                  Learning Topics
+                </div>
+                <DropdownMenuSeparator className="mb-2" />
+                {topicItems.map((item, index) => {
+                  const Icon = item.icon;
+                  const isActive = location.pathname === item.path;
+                  return (
+                    <DropdownMenuItem key={item.path} asChild className="p-0 mb-1">
+                      <Link
+                        to={item.path}
+                        className={cn(
+                          "flex items-center gap-3 px-3 py-2.5 rounded-md cursor-pointer transition-all duration-200",
+                          "hover:bg-secondary/80 hover:translate-x-1",
+                          isActive && "bg-primary/10 text-primary font-medium"
+                        )}
+                      >
+                        <div className={cn(
+                          "h-8 w-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-200",
+                          isActive ? item.gradient : "bg-secondary",
+                          isActive && "shadow-sm"
+                        )}>
+                          <Icon className={cn("h-4 w-4", isActive ? "text-white" : "text-muted-foreground")} />
+                        </div>
+                        <span className="flex-1">{item.name}</span>
+                        {isActive && (
+                          <div className="h-2 w-2 rounded-full bg-primary" />
+                        )}
+                      </Link>
+                    </DropdownMenuItem>
+                  );
+                })}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -134,23 +154,33 @@ export default function Navigation() {
 
               {/* Topics Section */}
               <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                Topics
+                Learning Topics
               </div>
-              {topicItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "px-4 py-3 pl-6 rounded-md text-sm font-medium transition-colors",
-                    location.pathname === item.path
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-secondary hover:text-primary"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {topicItems.map((item) => {
+                const Icon = item.icon;
+                const isActive = location.pathname === item.path;
+                return (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className={cn(
+                      "flex items-center gap-3 px-4 py-3 pl-6 rounded-md text-sm font-medium transition-all duration-200",
+                      isActive
+                        ? "bg-primary text-primary-foreground"
+                        : "text-foreground hover:bg-secondary hover:text-primary"
+                    )}
+                  >
+                    <div className={cn(
+                      "h-6 w-6 rounded-md flex items-center justify-center flex-shrink-0",
+                      isActive ? item.gradient : "bg-secondary"
+                    )}>
+                      <Icon className={cn("h-3.5 w-3.5", isActive ? "text-white" : "text-muted-foreground")} />
+                    </div>
+                    <span>{item.name}</span>
+                  </Link>
+                );
+              })}
 
               {/* Other Nav Items */}
               {navItems.slice(1).map((item) => (
