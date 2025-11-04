@@ -87,7 +87,7 @@ export default function StudySkills() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
                 <Button className="bg-gradient-blue text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
-                  Quick Tips Videos
+                  Quick Tips
                 </Button>
               </a>
               <a href="#downloads">
@@ -105,12 +105,12 @@ export default function StudySkills() {
         </div>
       </section>
 
-      {/* Quick Tips Videos */}
+      {/* Quick Tips */}
       <section id="quick-tips" className="py-16 scroll-mt-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-3 mb-8">
             <Video className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl font-bold text-foreground">Quick Tips Videos</h2>
+            <h2 className="text-3xl font-bold text-foreground">Quick Tips</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
