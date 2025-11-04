@@ -20,11 +20,6 @@ const videos = [
     duration: "6 min",
     description: "Discover how to use visualization to remember complex information.",
   },
-  {
-    title: "Spaced Repetition Explained",
-    duration: "8 min",
-    description: "Learn the science-backed method for long-term information retention.",
-  },
 ];
 
 const articles = [
@@ -83,7 +78,7 @@ export default function StudySkills() {
             <h2 className="text-3xl font-bold text-foreground">Quick Tips Videos</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {videos.map((video) => (
               <Card key={video.title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
