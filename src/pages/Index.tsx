@@ -4,6 +4,20 @@ import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rock
 
 const sections = [
   {
+    title: "Quick Start Guide",
+    description: "New to flipped learning? Start here for essential tips and popular resources.",
+    features: [
+      "Welcome and platform overview",
+      "Tips for flipped classroom success",
+      "Most popular resources",
+      "Getting started checklist",
+    ],
+    icon: <Rocket />,
+    link: "/quick-start",
+    gradient: "bg-gradient-blue",
+    isNew: false,
+  },
+  {
     title: "Study Skills",
     description: "Master effective study techniques and learning strategies to excel in your coursework.",
     features: [
@@ -100,20 +114,6 @@ const sections = [
     link: "/tutoring",
     gradient: "bg-gradient-purple",
     isNew: true,
-  },
-  {
-    title: "Quick Start Guide",
-    description: "New to flipped learning? Start here for essential tips and popular resources.",
-    features: [
-      "Welcome and platform overview",
-      "Tips for flipped classroom success",
-      "Most popular resources",
-      "Getting started checklist",
-    ],
-    icon: <Rocket />,
-    link: "/quick-start",
-    gradient: "bg-gradient-blue",
-    isNew: false,
   },
   {
     title: "Tools & Apps",
