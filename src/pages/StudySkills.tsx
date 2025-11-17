@@ -6,19 +6,22 @@ import { BookOpen, Video, FileText, Download, Clock, ExternalLink, ArrowUp } fro
 
 const videos = [
   {
-    title: "Cornell Note-Taking Method",
-    duration: "5 min",
-    description: "Learn the proven Cornell method for organizing and reviewing your notes effectively.",
+    title: "How to Create an Organized, Productive Study Space by Thomas Frank",
+    duration: "12:07",
+    description: "Check out this great video that shows you how to setup your study space to maximize focus and learning",
+    link: "https://www.youtube.com/watch?v=kB6wJkWO2SY&t=637s",
   },
   {
-    title: "Active Reading Strategies",
-    duration: "7 min",
-    description: "Master techniques to improve comprehension and retention when reading course materials.",
+    title: "12 ways to Active Recall in 12 minutes by Koi",
+    duration: "12:17",
+    description: "Check out the different techniques of active recall - quizzing yourself on what you have just learned for long term retention (aka keeping it from going in & out)",
+    link: "https://www.youtube.com/watch?v=MSq-KGj_cnY",
   },
   {
-    title: "Memory Palace Technique",
-    duration: "6 min",
-    description: "Discover how to use visualization to remember complex information.",
+    title: "The Secret to Note-taking for Busy People by Leila Gharani",
+    duration: "7:04",
+    description: "Check out the tips about notetaking that you can develop in Year Up and practice in WBE and in your career",
+    link: "https://www.youtube.com/watch?v=yxHPScN_ct4",
   },
 ];
 
@@ -130,9 +133,11 @@ export default function StudySkills() {
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                     <Video className="h-12 w-12 text-muted-foreground" />
                   </div>
-                  <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                    Watch Video
-                  </Button>
+                  <a href={video.link} target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
+                      Watch Video
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
