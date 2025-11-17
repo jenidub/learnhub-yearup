@@ -130,12 +130,18 @@ export default function StudySkills() {
                   <CardDescription>{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <Video className="h-12 w-12 text-muted-foreground" />
+                  <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                    <iframe
+                      src={video.link.replace('watch?v=', 'embed/').split('&')[0]}
+                      title={video.title}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
                   </div>
                   <a href={video.link} target="_blank" rel="noopener noreferrer">
                     <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                      Watch Video
+                      Watch on YouTube
                     </Button>
                   </a>
                 </CardContent>
