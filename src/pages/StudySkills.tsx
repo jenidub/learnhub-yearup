@@ -68,16 +68,9 @@ const downloads = [
   { name: "Weekly Study Planner", format: "PDF", source: "FSU Academic Center", link: "https://ace.fsu.edu/sites/g/files/imported/storage/original/application/cf3f5e0fb2be998e84df305135d83f41.pdf" },
   { name: "Spaced Repetition Study Planner", format: "PDF", source: "Genio.co", link: "https://genio.co/hubfs/Spaced%20repetition%20planner-1.pdf" },
   { name: "Focus & Distraction Log", format: "PDF", source: "UI Learning Center", link: "https://learning.uiowa.edu/sites/learning.uiowa.edu/files/2023-09/Monitoring%20and%20Minimizing%20Distractions%20%28web%29.pdf" },
-  { 
-    name: "Notetaking Templates", 
-    format: "PDF", 
-    source: "Multiple Sources", 
-    multipleDownloads: [
-      { text: "Cornell Notetaking Template", link: "https://www.honolulu.hawaii.edu/downloads/web/student-services/care-resource-notes-template.pdf" },
-      { text: "Mind Map Notetaking Template", link: "https://www.nwwvt.org/wp-content/uploads/2016/09/Mind-map-template.pdf" },
-      { text: "Outline Notetaking Template", link: "https://www.apsu.edu/writingcenter/writing-resources/Outline-Note-Taking-Method-Edit.pdf" },
-    ]
-  },
+  { name: "Cornell Notetaking Template", format: "PDF", link: "https://www.honolulu.hawaii.edu/downloads/web/student-services/care-resource-notes-template.pdf" },
+  { name: "Mind Map Notetaking Template", format: "PDF", link: "https://www.nwwvt.org/wp-content/uploads/2016/09/Mind-map-template.pdf" },
+  { name: "Outline Notetaking Template", format: "PDF", link: "https://www.apsu.edu/writingcenter/writing-resources/Outline-Note-Taking-Method-Edit.pdf" },
 ];
 
 export default function StudySkills() {
@@ -177,7 +170,7 @@ export default function StudySkills() {
             <h2 className="text-3xl font-bold text-foreground">Downloads</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {downloads.map((download) => (
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
@@ -201,18 +194,7 @@ export default function StudySkills() {
                   )}
                 </CardHeader>
                 <CardContent>
-                  {download.multipleDownloads ? (
-                    <div className="space-y-3">
-                      {download.multipleDownloads.map((item) => (
-                        <a key={item.text} href={item.link} target="_blank" rel="noopener noreferrer">
-                          <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                            <Download className="mr-2 h-4 w-4" />
-                            {item.text}
-                          </Button>
-                        </a>
-                      ))}
-                    </div>
-                  ) : download.link ? (
+                  {download.link ? (
                     <a href={download.link} target="_blank" rel="noopener noreferrer">
                       <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
                         <Download className="mr-2 h-4 w-4" />
