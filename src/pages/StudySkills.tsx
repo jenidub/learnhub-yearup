@@ -6,7 +6,7 @@ import { BookOpen, Video, FileText, Download, Clock, ExternalLink, ArrowUp } fro
 
 const videos = [
   {
-    title: "How to Create an Organized, Productive Study Space by Thomas Frank",
+    title: "Create an Organized, Productive Study Space by Thomas Frank",
     duration: "12:07",
     description: "Check out this great video that shows you how to setup your study space to maximize focus and learning",
     link: "https://www.youtube.com/watch?v=kB6wJkWO2SY&t=637s",
