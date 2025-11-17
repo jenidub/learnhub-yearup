@@ -82,7 +82,7 @@ export default function StudySkills() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Study Skills</h1>
             <p className="text-xl text-white/90 mb-8">
-              Master effective study techniques and learning strategies to excel in your coursework
+              Study Smarter, Not Harder
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
