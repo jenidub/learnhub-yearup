@@ -34,10 +34,11 @@ const articles = [
     link: "https://www.coursera.org/learn/study-skills-for-university-success",
   },
   {
-    title: "The Science of Effective Learning",
-    type: "Article",
-    duration: "10 min read",
-    source: "Harvard Education",
+    title: "Make It Stick: The Science of Successful Learning",
+    type: "eBook (PDF)",
+    duration: "26 pages",
+    source: "Harvard Press",
+    link: "https://www.hup.harvard.edu/file/feeds/PDF/9780674729018_sample.pdf",
   },
   {
     title: "How to Create a Study Schedule That Works",
