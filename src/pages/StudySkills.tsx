@@ -48,10 +48,11 @@ const articles = [
     link: "https://learningcenter.unc.edu/tips-and-tools/the-study-cycle/",
   },
   {
-    title: "Active Learning Techniques",
-    type: "Article",
-    duration: "8 min read",
+    title: "Active Learning: Why and How",
+    type: "Lecture",
+    duration: "1:27:36",
     source: "MIT OpenCourseWare",
+    link: "https://ocw.mit.edu/courses/5-95j-teaching-college-level-science-and-engineering-fall-2015/resources/class-session-5-teaching-methodologies-part-ii-active-learning-why-and-how/",
   },
   {
     title: "Mastering Study Habits",
