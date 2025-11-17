@@ -22,9 +22,6 @@ const topicItems = [
 
 const navItems = [
   { name: "Home", path: "/" },
-  { name: "Quick Start", path: "/quick-start" },
-  { name: "Tutoring", path: "/tutoring" },
-  { name: "Tools & Apps", path: "/tools" },
   { name: "Get Help", path: "/get-help" },
 ];
 
@@ -44,31 +41,19 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link
-              to="/"
-              className={cn(
-                "px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                location.pathname === "/"
-                  ? "bg-primary text-primary-foreground"
-                  : "text-foreground hover:bg-secondary hover:text-primary"
-              )}
-            >
-              Home
-            </Link>
+          <Link
+            to="/"
+            className={cn(
+              "px-3 py-2 rounded-md text-sm font-medium transition-colors",
+              location.pathname === "/"
+                ? "bg-primary text-primary-foreground"
+                : "text-foreground hover:bg-secondary hover:text-primary"
+            )}
+          >
+            Home
+          </Link>
 
-            <Link
-              to="/quick-start"
-              className={cn(
-                "px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                location.pathname === "/quick-start"
-                  ? "bg-primary text-primary-foreground"
-                  : "text-foreground hover:bg-secondary hover:text-primary"
-              )}
-            >
-              Quick Start
-            </Link>
-
-            {/* Topics Dropdown */}
+          {/* Topics Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
@@ -120,7 +105,7 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {navItems.slice(2).map((item) => (
+            {navItems.slice(1).map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
@@ -151,33 +136,20 @@ export default function Navigation() {
         {isOpen && (
           <div className="lg:hidden py-4 animate-fade-in">
             <div className="flex flex-col gap-2">
-              <Link
-                to="/"
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  "px-4 py-3 rounded-md text-sm font-medium transition-colors",
-                  location.pathname === "/"
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary hover:text-primary"
-                )}
-              >
-                Home
-              </Link>
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "px-4 py-3 rounded-md text-sm font-medium transition-colors",
+                location.pathname === "/"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-secondary hover:text-primary"
+              )}
+            >
+              Home
+            </Link>
 
-              <Link
-                to="/quick-start"
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  "px-4 py-3 rounded-md text-sm font-medium transition-colors",
-                  location.pathname === "/quick-start"
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary hover:text-primary"
-                )}
-              >
-                Quick Start
-              </Link>
-
-              {/* Topics Section */}
+            {/* Topics Section */}
               <div className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                 Learning Topics
               </div>
@@ -207,22 +179,22 @@ export default function Navigation() {
                 );
               })}
 
-              {/* Other Nav Items */}
-              {navItems.slice(2).map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "px-4 py-3 rounded-md text-sm font-medium transition-colors",
-                    location.pathname === item.path
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-secondary hover:text-primary"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
+            {/* Other Nav Items */}
+            {navItems.slice(1).map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className={cn(
+                  "px-4 py-3 rounded-md text-sm font-medium transition-colors",
+                  location.pathname === item.path
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
             </div>
           </div>
         )}
