@@ -27,10 +27,11 @@ const videos = [
 
 const articles = [
   {
-    title: "Study Skills Success Course",
+    title: "Study Skills for University Success",
     type: "Course",
-    duration: "2 hours",
+    duration: "7 hours",
     source: "Coursera",
+    link: "https://www.coursera.org/learn/study-skills-for-university-success",
   },
   {
     title: "The Science of Effective Learning",
@@ -246,10 +247,19 @@ export default function StudySkills() {
                   <CardDescription className="text-sm">Source: {article.source}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
+                  {article.link ? (
+                    <a href={article.link} target="_blank" rel="noopener noreferrer">
+                      <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                        Read More
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground" disabled>
+                      Read More
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
