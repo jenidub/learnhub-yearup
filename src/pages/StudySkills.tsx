@@ -243,10 +243,6 @@ export default function StudySkills() {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {article.duration}
-                    </Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
                   <CardDescription className="text-sm">Source: {article.source}</CardDescription>
