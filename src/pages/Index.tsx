@@ -4,20 +4,6 @@ import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rock
 
 const sections = [
   {
-    title: "Quick Start Guide",
-    description: "New to flipped learning? Start here for essential tips and popular resources.",
-    features: [
-      "Welcome and platform overview",
-      "Tips for flipped classroom success",
-      "Most popular resources",
-      "Getting started checklist",
-    ],
-    icon: <Rocket />,
-    link: "/quick-start",
-    gradient: "bg-gradient-blue",
-    isNew: false,
-  },
-  {
     title: "Study Skills",
     description: "Master effective study techniques and learning strategies to excel in your coursework.",
     features: [
@@ -102,41 +88,13 @@ const sections = [
     isNew: true,
   },
   {
-    title: "Tutoring Center",
-    description: "Access free academic tutoring and support from the Year Up Academic Team.",
-    features: [
-      "Writing, Communication, Reading (WCR) support",
-      "Academy LTCA and DATA tutoring",
-      "Tutoring schedule and contact information",
-      "One-on-one and group sessions",
-    ],
-    icon: <Users />,
-    link: "/tutoring",
-    gradient: "bg-gradient-purple",
-    isNew: true,
-  },
-  {
-    title: "Tools & Apps",
-    description: "Discover digital tools to enhance your learning and organization.",
-    features: [
-      "Note-taking applications",
-      "Organization and productivity tools",
-      "Collaboration platforms",
-      "Other helpful resources",
-    ],
-    icon: <Wrench />,
-    link: "/tools",
-    gradient: "bg-gradient-green",
-    isNew: false,
-  },
-  {
     title: "Get Help",
-    description: "Find the right support when you need it most with our comprehensive help resources.",
+    description: "Connect with support services and resources when you need assistance.",
     features: [
-      "When to reach out flowchart",
-      "Academic Team contact info",
-      "Student Technical Support (STS)",
-      "Professional Development and Enrichment",
+      "Ask a question or report an issue",
+      "Request academic support",
+      "Technical support contact",
+      "Emergency resources and hotlines",
     ],
     icon: <HelpCircle />,
     link: "/get-help",
