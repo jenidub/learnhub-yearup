@@ -180,7 +180,15 @@ export default function StudySkills() {
                   <CardTitle className="text-base">{download.name}</CardTitle>
                   <CardDescription>Format: {download.format}</CardDescription>
                   {download.source && (
-                    <CardDescription className="mt-1">Source: {download.source}</CardDescription>
+                    <CardDescription className="mt-1">
+                      Source: {download.link ? (
+                        <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                          {download.source}
+                        </a>
+                      ) : (
+                        download.source
+                      )}
+                    </CardDescription>
                   )}
                 </CardHeader>
                 <CardContent>
