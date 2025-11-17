@@ -55,16 +55,18 @@ const articles = [
     link: "https://ocw.mit.edu/courses/5-95j-teaching-college-level-science-and-engineering-fall-2015/resources/class-session-5-teaching-methodologies-part-ii-active-learning-why-and-how/",
   },
   {
-    title: "Mastering Study Habits",
-    type: "Course",
-    duration: "1.5 hours",
-    source: "edX",
+    title: "Crash Course Study Skills",
+    type: "Video Series",
+    duration: "2 hours (Full Series)",
+    source: "Crash Course",
+    link: "https://thecrashcourse.com/courses/exercise-crash-course-study-skills-10/",
   },
   {
-    title: "Note-Taking Strategies for College",
-    type: "Guide",
-    duration: "12 min read",
-    source: "Academic Success Center",
+    title: "Notetaking 101 Guide",
+    type: "Handout",
+    duration: "30 minutes",
+    source: "OSU Academic Success Center",
+    link: "https://success.oregonstate.edu/sites/success.oregonstate.edu/files/2024-08/4_p_note-taking_101_24.pdf",
   },
 ];
 
