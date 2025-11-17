@@ -14,7 +14,7 @@ const videos = [
   {
     title: "12 ways to Active Recall in 12 minutes by Koi",
     duration: "12:17",
-    description: "Check out the different techniques of active recall - quizzing yourself on what you have just learned for long term retention (aka keeping it from going in & out)",
+    description: "Check out the different techniques of active recall, a study method to retain new information",
     link: "https://www.youtube.com/watch?v=MSq-KGj_cnY",
   },
   {
