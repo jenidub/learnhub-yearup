@@ -65,10 +65,10 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Weekly Study Planner", format: "PDF" },
-  { name: "Study Session Tracker", format: "Excel" },
-  { name: "Learning Style Quiz", format: "PDF" },
-  { name: "Focus & Distraction Log", format: "PDF" },
+  { name: "Weekly Study Planner", format: "PDF", source: "", link: "" },
+  { name: "Study Session Tracker", format: "Excel", source: "", link: "" },
+  { name: "Learning Style Quiz", format: "PDF", source: "", link: "" },
+  { name: "Focus & Distraction Log", format: "PDF", source: "", link: "" },
 ];
 
 export default function StudySkills() {
@@ -179,12 +179,24 @@ export default function StudySkills() {
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
                   <CardDescription>Format: {download.format}</CardDescription>
+                  {download.source && (
+                    <CardDescription className="mt-1">Source: {download.source}</CardDescription>
+                  )}
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
-                  </Button>
+                  {download.link ? (
+                    <a href={download.link} target="_blank" rel="noopener noreferrer">
+                      <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                        <Download className="mr-2 h-4 w-4" />
+                        Download
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground" disabled>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
