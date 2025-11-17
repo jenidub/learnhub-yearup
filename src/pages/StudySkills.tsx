@@ -41,10 +41,11 @@ const articles = [
     link: "https://www.hup.harvard.edu/file/feeds/PDF/9780674729018_sample.pdf",
   },
   {
-    title: "How to Create a Study Schedule That Works",
-    type: "Guide",
-    duration: "15 min read",
-    source: "Learning Center",
+    title: "The Study Cycle",
+    type: "Website",
+    duration: "N/A",
+    source: "UNC Learning Center",
+    link: "https://learningcenter.unc.edu/tips-and-tools/the-study-cycle/",
   },
   {
     title: "Active Learning Techniques",
