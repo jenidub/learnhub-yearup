@@ -202,7 +202,7 @@ export default function StudySkills() {
                 </CardHeader>
                 <CardContent>
                   {download.multipleDownloads ? (
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {download.multipleDownloads.map((item) => (
                         <a key={item.text} href={item.link} target="_blank" rel="noopener noreferrer">
                           <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
