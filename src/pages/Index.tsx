@@ -88,6 +88,21 @@ const sections = [
     isNew: true,
   },
   {
+    title: "Quick Start Guide",
+    description: "Get started with your Year Up journey with essential onboarding resources.",
+    features: [
+      "Welcome and orientation materials",
+      "Essential tools setup",
+      "First week checklist",
+      "Program overview",
+    ],
+    icon: <Rocket />,
+    link: "/quick-start",
+    gradient: "bg-gradient-blue",
+    isNew: false,
+    comingSoon: true,
+  },
+  {
     title: "Get Help",
     description: "Connect with support services and resources when you need assistance.",
     features: [
@@ -100,6 +115,7 @@ const sections = [
     link: "/get-help",
     gradient: "bg-gradient-pink",
     isNew: false,
+    comingSoon: true,
   },
   {
     title: "Phase-Specific Resources",
