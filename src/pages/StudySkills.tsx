@@ -35,7 +35,7 @@ const articles = [
   },
   {
     title: "Make It Stick: Science of Successful Learning",
-    type: "eBook (PDF)",
+    type: "eBook",
     duration: "26 pages",
     source: "Harvard Press",
     link: "https://www.hup.harvard.edu/file/feeds/PDF/9780674729018_sample.pdf",
