@@ -68,9 +68,9 @@ const downloads = [
   { name: "Weekly Study Planner", format: "PDF", source: "FSU Academic Center", link: "https://ace.fsu.edu/sites/g/files/imported/storage/original/application/cf3f5e0fb2be998e84df305135d83f41.pdf" },
   { name: "Spaced Repetition Study Planner", format: "PDF", source: "Genio.co", link: "https://genio.co/hubfs/Spaced%20repetition%20planner-1.pdf" },
   { name: "Focus & Distraction Log", format: "PDF", source: "UI Learning Center", link: "https://learning.uiowa.edu/sites/learning.uiowa.edu/files/2023-09/Monitoring%20and%20Minimizing%20Distractions%20%28web%29.pdf" },
-  { name: "Cornell Notetaking Template", format: "PDF", link: "https://www.honolulu.hawaii.edu/downloads/web/student-services/care-resource-notes-template.pdf" },
-  { name: "Mind Map Notetaking Template", format: "PDF", link: "https://www.nwwvt.org/wp-content/uploads/2016/09/Mind-map-template.pdf" },
-  { name: "Outline Notetaking Template", format: "PDF", link: "https://www.apsu.edu/writingcenter/writing-resources/Outline-Note-Taking-Method-Edit.pdf" },
+  { name: "Cornell Notetaking Template", format: "PDF", source: "Honolulu Community College", link: "https://www.honolulu.hawaii.edu/downloads/web/student-services/care-resource-notes-template.pdf" },
+  { name: "Mind Map Notetaking Template", format: "PDF", source: "Northwest Vermont Career Academy", link: "https://www.nwwvt.org/wp-content/uploads/2016/09/Mind-map-template.pdf" },
+  { name: "Outline Notetaking Template", format: "PDF", source: "Austin Peay State University", link: "https://www.apsu.edu/writingcenter/writing-resources/Outline-Note-Taking-Method-Edit.pdf" },
 ];
 
 export default function StudySkills() {
