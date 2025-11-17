@@ -65,9 +65,9 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Weekly Study Planner", format: "PDF", source: "FSU Academic Center for Excellence", link: "https://ace.fsu.edu/sites/g/files/imported/storage/original/application/cf3f5e0fb2be998e84df305135d83f41.pdf" },
+  { name: "Weekly Study Planner", format: "PDF", source: "FSU Academic Center", link: "https://ace.fsu.edu/sites/g/files/imported/storage/original/application/cf3f5e0fb2be998e84df305135d83f41.pdf" },
   { name: "Spaced Repetition Study Planner", format: "PDF", source: "Genio.co", link: "https://genio.co/hubfs/Spaced%20repetition%20planner-1.pdf" },
-  { name: "Focus & Distraction Log", format: "PDF", source: "University of Iowa Learning Center", link: "https://learning.uiowa.edu/sites/learning.uiowa.edu/files/2023-09/Monitoring%20and%20Minimizing%20Distractions%20%28web%29.pdf" },
+  { name: "Focus & Distraction Log", format: "PDF", source: "UI Learning Center", link: "https://learning.uiowa.edu/sites/learning.uiowa.edu/files/2023-09/Monitoring%20and%20Minimizing%20Distractions%20%28web%29.pdf" },
   { 
     name: "Notetaking Templates", 
     format: "PDF", 
