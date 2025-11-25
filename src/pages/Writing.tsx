@@ -6,13 +6,13 @@ import { MessageSquare, Video, FileText, Download, Clock, ExternalLink, ArrowUp 
 
 const videos = [
   {
-    title: "How to proofread your own writing like a pro",
+    title: "How to Proofread Your Own Writing Like a Pro",
     duration: "11:50",
     description: "Tips for proofreading your own writing both on paper and online (Key Tips: 7:58 - 11:50)",
     link: "https://www.youtube.com/watch?v=QUvXFEV17sk"
   },
   {
-    title: "3 Tips for Clear and Concise Writing: How To Improve Your Writing",
+    title: "3 Tips for Clear and Concise Writing: How to Improve Your Writing",
     duration: "6:55",
     description: "Tips to achieve clear and concise writing to share your points faster and have more impact",
     link: "https://www.youtube.com/watch?v=H3tw-qqnwj4"
@@ -120,7 +120,7 @@ export default function Writing() {
             {videos.map((video) => (
               <Card key={video.title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex items-start justify-between mb-2 min-h-[3.5rem]">
                     <CardTitle className="text-lg">{video.title}</CardTitle>
                     <Badge variant="secondary" className="ml-2 shrink-0 flex items-center gap-1">
                       <Clock className="h-3 w-3" />
