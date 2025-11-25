@@ -27,40 +27,22 @@ const videos = [
 
 const articles = [
   {
-    title: "Academic Writing Essentials",
-    type: "Course",
-    duration: "2.5 hours",
-    source: "edX",
-  },
-  {
-    title: "Common Writing Mistakes to Avoid",
-    type: "Article",
-    duration: "10 min read",
-    source: "Purdue OWL",
-  },
-  {
-    title: "Effective Editing Strategies",
+    title: "Grammarly Grammar Guide",
     type: "Guide",
-    duration: "12 min read",
-    source: "Writing Center",
+    source: "Grammarly",
+    link: "https://www.grammarly.com/grammar"
   },
   {
-    title: "Building Strong Arguments",
-    type: "Article",
-    duration: "8 min read",
-    source: "Harvard Writing Center",
+    title: "Effective Communication in the Workplace",
+    type: "Course (Free)",
+    source: "Open University",
+    link: "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace?active-tab=content-tab"
   },
   {
-    title: "Business Communication Skills",
+    title: "Business Writing",
     type: "Course",
-    duration: "1.5 hours",
-    source: "LinkedIn Learning",
-  },
-  {
-    title: "Citation and References Guide",
-    type: "Guide",
-    duration: "15 min read",
-    source: "Academic Success Center",
+    source: "Coursera - University of Colorado Boulder",
+    link: "https://www.coursera.org/learn/writing-for-business"
   },
 ];
 
@@ -251,19 +233,17 @@ export default function Writing() {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {article.duration}
-                    </Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
                   <CardDescription className="text-sm">Source: {article.source}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
+                  <a href={article.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      View Resource
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
