@@ -210,7 +210,8 @@ export default function Writing() {
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
                   <CardDescription>
-                    Format: {download.format} • {download.source}
+                    <div>Format: {download.format}</div>
+                    <div>Source: {download.source}</div>
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
