@@ -130,14 +130,18 @@ export default function Writing() {
                   <CardDescription>{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <Video className="h-12 w-12 text-muted-foreground" />
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={video.link.replace("watch?v=", "embed/")}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
                   </div>
-                  <a href={video.link} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                      Watch Video
-                    </Button>
-                  </a>
                 </CardContent>
               </Card>
             ))}
