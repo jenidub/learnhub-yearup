@@ -6,19 +6,22 @@ import { MessageSquare, Video, FileText, Download, Clock, ExternalLink, ArrowUp 
 
 const videos = [
   {
-    title: "Writing Clear Thesis Statements",
-    duration: "5 min",
-    description: "Learn to craft strong, focused thesis statements that guide your essays effectively.",
+    title: "How to proofread your own writing like a pro",
+    duration: "11:50",
+    description: "Tips for proofreading your own writing both on paper and online (Key Tips: 7:58 - 11:50)",
+    link: "https://www.youtube.com/watch?v=QUvXFEV17sk"
   },
   {
-    title: "Professional Email Writing",
-    duration: "6 min",
-    description: "Master the art of writing clear, professional emails for academic and workplace settings.",
+    title: "3 Tips for Clear and Concise Writing: How To Improve Your Writing",
+    duration: "6:55",
+    description: "Tips to achieve clear and concise writing to share your points faster and have more impact",
+    link: "https://www.youtube.com/watch?v=H3tw-qqnwj4"
   },
   {
-    title: "Paragraph Structure and Flow",
-    duration: "7 min",
-    description: "Discover techniques to create well-organized paragraphs with smooth transitions.",
+    title: "Writing Coherent Paragraphs",
+    duration: "12:19",
+    description: "How to use topic sentences and transitional markers to achieve a well-developed, coherent paragraph",
+    link: "https://www.youtube.com/watch?v=mzN1JmG6qoM"
   },
 ];
 
@@ -130,9 +133,11 @@ export default function Writing() {
                   <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                     <Video className="h-12 w-12 text-muted-foreground" />
                   </div>
-                  <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                    Watch Video
-                  </Button>
+                  <a href={video.link} target="_blank" rel="noopener noreferrer" className="block">
+                    <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
+                      Watch Video
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
