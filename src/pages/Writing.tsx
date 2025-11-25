@@ -65,10 +65,43 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Essay Outline Template", format: "Word" },
-  { name: "Email Templates", format: "PDF" },
-  { name: "Revision Checklist", format: "PDF" },
-  { name: "Peer Review Checklist", format: "PDF" },
+  { 
+    name: "Academic Essay Outline Worksheet", 
+    format: "PDF",
+    source: "Southern University of New Orleans",
+    link: "https://www.suno.edu/assets/suno/PDFs/WritingCenter/Academic-Essay-Outline-Practice-Worksheet.pdf"
+  },
+  { 
+    name: "25 Email Communication Examples", 
+    format: "Online",
+    source: "Superhuman",
+    link: "https://blog.superhuman.com/email-communication-examples/",
+    buttonText: "View Resource"
+  },
+  { 
+    name: "Guide to Writing Self-Editing", 
+    format: "PDF",
+    source: "University of New Hampshire",
+    link: "https://www.unh.edu/student-success/sites/default/files/media/2022-07/resource-self-editing-checklist-writing.pdf"
+  },
+  { 
+    name: "Transition Words Cheat Sheet", 
+    format: "PDF",
+    source: "Jimmie's Collage",
+    link: "https://jimmiescollage.com/downloads/writing/transitions.pdf"
+  },
+  { 
+    name: "Grammar Quick Reference Guide", 
+    format: "PDF",
+    source: "Pasco-Hernando State College",
+    link: "https://academic-success.phsc.edu/sites/default/files/documents/grammar-cheat-sheet-042413.pdf"
+  },
+  { 
+    name: "Do's and Don'ts of the Workplace", 
+    format: "PDF",
+    source: "Chamber of Commerce Hawaii",
+    link: "https://www.cochawaii.org/wp-content/uploads/2024/09/Do_s-and-Don_ts-of-the-Workplace-PDF.pdf"
+  },
 ];
 
 export default function Writing() {
@@ -166,7 +199,7 @@ export default function Writing() {
             <h2 className="text-3xl font-bold text-foreground">Downloads</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {downloads.map((download) => (
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
@@ -176,13 +209,17 @@ export default function Writing() {
                     </div>
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
-                  <CardDescription>Format: {download.format}</CardDescription>
+                  <CardDescription>
+                    Format: {download.format} • {download.source}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
-                  </Button>
+                  <a href={download.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      <Download className="mr-2 h-4 w-4" />
+                      {download.buttonText || "Download"}
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
