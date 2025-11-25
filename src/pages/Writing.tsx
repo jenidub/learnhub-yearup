@@ -82,7 +82,7 @@ export default function Writing() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Writing & Communication</h1>
             <p className="text-xl text-white/90 mb-8">
-              Enhance your writing skills and professional communication abilities
+              Communicate with Clarity and Confidence
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="#quick-tips">
