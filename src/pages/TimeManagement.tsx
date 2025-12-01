@@ -18,7 +18,7 @@ const videos = [
     link: "https://www.youtube.com/watch?v=xgp6eELYY1M",
   },
   {
-    title: "How To Effectively Plan Your Day / Week / Month",
+    title: "How to Plan Your Day | Week | Month",
     duration: "4:32",
     description: "Learn a system to effectively plan your day, week, and month. It lays out a three-step process, connecting daily tasks to long-term goals using a calendar.",
     link: "https://www.youtube.com/watch?v=gZNstNuwEXQ",
