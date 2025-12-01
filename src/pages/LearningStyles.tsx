@@ -8,7 +8,7 @@ const videos = [
   {
     title: "Discover Your Learning Style",
     duration: "3:31",
-    description: "In this video, you'll learn more about the different types of learning styles, to see which one works best for you!",
+    description: "In this video, you'll learn more about the VARK theory of learning styles. They are described in detail and you can see which one works best for you!",
     link: "https://www.youtube.com/watch?v=_IopcOwfsoU&t=15s",
   },
   {
