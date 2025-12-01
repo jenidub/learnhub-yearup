@@ -65,10 +65,10 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Decision Matrix Template", format: "Excel" },
-  { name: "Problem-Solving Framework", format: "PDF" },
-  { name: "Root Cause Analysis Template", format: "PDF" },
-  { name: "Critical Thinking Checklist", format: "PDF" },
+  { name: "Decision-Making Matrix", format: "PDF", source: "UConnect Labs", link: "https://cdn.uconnectlabs.com/wp-content/uploads/sites/244/2025/02/Life-Design-Decision-Matrix-Worksheet-.pdf" },
+  { name: "McKinsey 7S Problem-Solving Framework", format: "Image", source: "Slideworks", link: "https://slideworks-website.s3.eu-west-1.amazonaws.com/7_step_problem_solving_process_a97066dafb.png" },
+  { name: "5 Whys Root Cause Analysis Template", format: "PDF", source: "State of Michigan", link: "https://www.michigan.gov/-/media/Project/Websites/mde/2020/04/02/5_Whys_Worksheet.pdf?rev=1a4a151a2fbf4e56a0f88dd1ad43452f" },
+  { name: "Ultimate Cheatsheet for Critical Thinking", format: "PDF", source: "Association of American Law Schools", link: "https://am.aals.org/wp-content/uploads/sites/4/2020/01/AM20LawMedicineHealthPovertyPierson-BrownGraphics.pdf" },
 ];
 
 export default function CriticalThinking() {
@@ -171,7 +171,7 @@ export default function CriticalThinking() {
             <h2 className="text-3xl font-bold text-foreground">Downloads</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {downloads.map((download) => (
               <Card key={download.name} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
@@ -181,12 +181,19 @@ export default function CriticalThinking() {
                     </div>
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
-                  <CardDescription>Format: {download.format}</CardDescription>
+                  <CardDescription>
+                    <div>Format: {download.format}</div>
+                    <div className="mt-1">
+                      Source: <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{download.source}</a>
+                    </div>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
+                  <Button asChild variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                    <a href={download.link} target="_blank" rel="noopener noreferrer">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
