@@ -6,10 +6,10 @@ import { Lightbulb, Video, FileText, Download, Clock, ExternalLink, ArrowUp } fr
 
 const videos = [
   {
-    title: "What Is Critical Thinking?",
-    duration: "2:34",
-    description: "Overview of what critical thinking is and why it's important",
-    link: "https://www.youtube.com/watch?v=-eEBuqwY-nE",
+    title: "5 Ways to Improve Your Critical Thinking Skills by Indeed",
+    duration: "4:56",
+    description: "Employers value critical thinkers because they get things done. Discover five steps to improve your critical thinking skills and become a standout candidate.",
+    link: "https://www.youtube.com/watch?v=cuQ2LMld1Dg",
   },
   {
     title: "5 Tips to Improve Your Critical Thinking",
