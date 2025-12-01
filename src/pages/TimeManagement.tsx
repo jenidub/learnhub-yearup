@@ -6,19 +6,22 @@ import { Clock, Video, FileText, Download, ExternalLink, ArrowUp } from "lucide-
 
 const videos = [
   {
-    title: "The Pomodoro Technique Explained",
-    duration: "4 min",
-    description: "Learn how to use 25-minute focus sessions to boost productivity and maintain concentration.",
+    title: "How to Stop Wasting Time",
+    duration: "13:45",
+    description: "It's time to improve your time management skills. In today's video, the speaker covers 5 tactics you can use to stop wasting time",
+    link: "https://www.youtube.com/watch?v=xwsLuxlbY2w",
   },
   {
-    title: "Time Blocking for Students",
-    duration: "6 min",
-    description: "Master the art of scheduling your day in blocks for maximum efficiency and balance.",
+    title: "10 Time Management Tips to Boost Your Productivity",
+    duration: "3:47",
+    description: "This video explores 10 easy-to-follow time management tips that will help you focus, create a plan, and stick to it.",
+    link: "https://www.youtube.com/watch?v=xgp6eELYY1M",
   },
   {
-    title: "Overcoming Procrastination",
-    duration: "8 min",
-    description: "Practical strategies to stop delaying important tasks and start taking action.",
+    title: "How To Effectively Plan Your Day / Week / Month",
+    duration: "4:32",
+    description: "Learn a system to effectively plan your day, week, and month. It lays out a three-step process, connecting daily tasks to long-term goals using a calendar.",
+    link: "https://www.youtube.com/watch?v=gZNstNuwEXQ",
   },
 ];
 
@@ -127,12 +130,18 @@ export default function TimeManagement() {
                   <CardDescription>{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <Video className="h-12 w-12 text-muted-foreground" />
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${video.link.split('v=')[1]}`}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
                   </div>
-                  <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                    Watch Video
-                  </Button>
                 </CardContent>
               </Card>
             ))}
