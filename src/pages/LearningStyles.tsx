@@ -18,7 +18,7 @@ const videos = [
     link: "https://www.youtube.com/watch?v=eoIr59LNUyE",
   },
   {
-    title: "Learning Styles & Multiple Intelligences",
+    title: "Gardner's Multiple Intelligences",
     duration: "6:38",
     description: "This video explores Howard Gardner's multiple intelligences theory. It goes into detail to describe each learning style and what it means for learning.",
     link: "https://www.youtube.com/watch?v=FVg9n0l0Gf0",
