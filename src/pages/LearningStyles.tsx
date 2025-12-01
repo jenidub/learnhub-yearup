@@ -27,6 +27,12 @@ const videos = [
 
 const articles = [
   {
+    title: "A Complete Guide to VARK",
+    type: "Website",
+    source: "VARK Learn",
+    link: "https://vark-learn.com/introduction-to-vark/",
+  },
+  {
     title: "Gardner's Theory of Multiple Intelligences",
     type: "Website",
     source: "Simply Psychology",
