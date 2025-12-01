@@ -34,7 +34,7 @@ const articles = [
     link: "https://www.coursera.org/learn/study-skills-for-university-success",
   },
   {
-    title: "Make It Stick: Science of Successful Learning",
+    title: "Science of Successful Learning",
     type: "eBook",
     duration: "26 pages",
     source: "Harvard Press",
