@@ -6,19 +6,22 @@ import { Brain, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "
 
 const videos = [
   {
-    title: "Understanding Your Learning Style",
-    duration: "5 min",
-    description: "Discover the different learning styles and identify which methods work best for you.",
+    title: "Discover Your Learning Style",
+    duration: "3:31",
+    description: "In this video, you'll learn more about the different types of learning styles, to see which one works best for you!",
+    link: "https://www.youtube.com/watch?v=_IopcOwfsoU&t=15s",
   },
   {
-    title: "Visual Learning Techniques",
-    duration: "6 min",
-    description: "Learn strategies for visual learners including mind mapping and diagram creation.",
+    title: "What Learning Style Are You?",
+    duration: "6:49",
+    description: "Find out what learning style you are and how to work to your potential. The video also shows tips for learning in each learning style.",
+    link: "https://www.youtube.com/watch?v=eoIr59LNUyE",
   },
   {
-    title: "Study Strategies for Neurodivergent Learners",
-    duration: "8 min",
-    description: "Explore ADHD-friendly and neurodivergent study methods that enhance focus and retention.",
+    title: "Learning Styles & Multiple Intelligences",
+    duration: "6:38",
+    description: "This video explores Howard Gardner's multiple intelligences theory. It goes into detail to describe each learning style and what it means for learning.",
+    link: "https://www.youtube.com/watch?v=FVg9n0l0Gf0",
   },
 ];
 
@@ -127,12 +130,21 @@ export default function LearningStyles() {
                   <CardDescription>{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <Video className="h-12 w-12 text-muted-foreground" />
+                  <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                    <iframe
+                      src={video.link.replace('watch?v=', 'embed/').split('&')[0]}
+                      title={video.title}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
                   </div>
-                  <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                    Watch Video
-                  </Button>
+                  <a href={video.link} target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Watch on YouTube
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
