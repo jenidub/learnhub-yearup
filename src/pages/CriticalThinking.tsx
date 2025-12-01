@@ -14,7 +14,7 @@ const videos = [
   {
     title: "5 Tips to Improve Your Critical Thinking",
     duration: "4:29",
-    description: "Every day, a sea of decisions stretches before us, and it's impossible to make a perfect choice every time. Samantha Agoos describes a 5-step process that may help you with any number of problems.",
+    description: "Every day, a sea of decisions stretches before us. Samantha Agoos describes a 5-step process that may help you with any number of problems.",
     link: "https://www.youtube.com/watch?v=dItUGF8GdTw",
   },
   {
