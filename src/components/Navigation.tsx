@@ -13,7 +13,6 @@ import { cn } from "@/lib/utils";
 
 const topicItems = [
   { name: "Study Skills", path: "/study-skills", icon: BookOpen, gradient: "bg-gradient-purple" },
-  { name: "Test Prep", path: "/test-prep", icon: FileText, gradient: "bg-gradient-pink" },
   { name: "Writing", path: "/writing", icon: MessageSquare, gradient: "bg-gradient-blue" },
   { name: "Critical Thinking", path: "/critical-thinking", icon: Lightbulb, gradient: "bg-gradient-green" },
   { name: "Time Management", path: "/time-management", icon: Clock, gradient: "bg-gradient-orange" },

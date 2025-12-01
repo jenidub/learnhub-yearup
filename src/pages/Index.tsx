@@ -30,6 +30,7 @@ const sections = [
     link: "/test-prep",
     gradient: "bg-gradient-pink",
     isNew: false,
+    comingSoon: true,
   },
   {
     title: "Writing & Communication",
