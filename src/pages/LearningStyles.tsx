@@ -65,10 +65,30 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Learning Style Quiz", format: "PDF" },
-  { name: "ADHD-Friendly Study Schedule", format: "Excel" },
-  { name: "Sensory Break Ideas", format: "PDF" },
-  { name: "Focus & Distraction Log", format: "PDF" },
+  { 
+    name: "VARK Learning Styles Questionnaire", 
+    format: "PDF", 
+    source: "VARK Learn Limited",
+    link: "https://vark-learn.com/wp-content/uploads/2014/08/The-VARK-Questionnaire.pdf"
+  },
+  { 
+    name: "Multiple Intelligences Self-Assessment", 
+    format: "PDF", 
+    source: "Edutopia",
+    link: "https://www.edutopia.org/multiple-intelligences-assessment"
+  },
+  { 
+    name: "Learning Style Inventory", 
+    format: "PDF", 
+    source: "Penn State Learning",
+    link: "https://pennstatelearning.psu.edu/learning-style-inventory"
+  },
+  { 
+    name: "Study Strategies by Learning Type", 
+    format: "PDF", 
+    source: "Academic Skills Center",
+    link: "https://asc.dso.iastate.edu/study-skills/learning-styles"
+  },
 ];
 
 export default function LearningStyles() {
@@ -179,13 +199,20 @@ export default function LearningStyles() {
                     </div>
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
-                  <CardDescription>Format: {download.format}</CardDescription>
+                  <CardDescription>
+                    <div>Format: {download.format}</div>
+                    <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                      {download.source}
+                    </a>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
-                  </Button>
+                  <a href={download.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
