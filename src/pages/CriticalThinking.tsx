@@ -18,7 +18,7 @@ const videos = [
     link: "https://www.youtube.com/watch?v=dItUGF8GdTw",
   },
   {
-    title: "SOLVE Complex Problems With The 7-Step McKinsey Framework",
+    title: "7-Step McKinsey Framework",
     duration: "4:31",
     description: "While it might seem like some people are just born with stronger problem-solving skills, there are strategies that anyone can use to improve them.",
     link: "https://www.youtube.com/watch?v=mzDModXLH90",
