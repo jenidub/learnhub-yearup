@@ -44,6 +44,24 @@ const articles = [
     source: "IBM via Coursera",
     link: "https://www.coursera.org/learn/solving-problems-with-creative-and-critical-thinking",
   },
+  {
+    title: "Better Decision Making: A Toolkit",
+    type: "PDF",
+    source: "Thinking Ahead Institute",
+    link: "https://www.thinkingaheadinstitute.org/content/uploads/2020/11/Better_Decision_Making_Toolkits_1218-1.pdf",
+  },
+  {
+    title: "Creative Problem Solving Test",
+    type: "Assessment",
+    source: "Psychology Today",
+    link: "https://www.psychologytoday.com/us/tests/career/creative-problem-solving-test",
+  },
+  {
+    title: "Creative Problem Solving and Decision Making Techniques",
+    type: "Course",
+    source: "Pluralsight",
+    link: "https://app.pluralsight.com/library/courses/creative-problem-solving-decision-techniques/table-of-contents",
+  },
 ];
 
 const downloads = [
