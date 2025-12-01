@@ -66,28 +66,28 @@ const articles = [
 
 const downloads = [
   { 
-    name: "VARK Learning Styles Questionnaire", 
+    name: "VARK Learning Questionnaire", 
     format: "PDF", 
     source: "VARK Learn Limited",
-    link: "https://vark-learn.com/wp-content/uploads/2014/08/The-VARK-Questionnaire.pdf"
+    link: "https://vark-learn.com/the-vark-questionnaire"
   },
   { 
-    name: "Multiple Intelligences Self-Assessment", 
+    name: "Learning Styles Tips and Strategies", 
     format: "PDF", 
-    source: "Edutopia",
-    link: "https://www.edutopia.org/multiple-intelligences-assessment"
+    source: "Florida State University",
+    link: "https://ace.fsu.edu/sites/g/files/upcbnu296/files/Study_Strategies_by_Learning_Styles.pdf"
   },
   { 
-    name: "Learning Style Inventory", 
+    name: "Auditory Learners Study Guide", 
     format: "PDF", 
-    source: "Penn State Learning",
-    link: "https://pennstatelearning.psu.edu/learning-style-inventory"
+    source: "WVU Institute of Tech",
+    link: "https://studentsuccesscenter.wvutech.edu/files/d/e857d4e9-7cf5-40a7-b91b-b5a59a468b74/auditory_learners-tips.pdf"
   },
   { 
-    name: "Study Strategies by Learning Type", 
+    name: "Multiple Intelligences Survey", 
     format: "PDF", 
-    source: "Academic Skills Center",
-    link: "https://asc.dso.iastate.edu/study-skills/learning-styles"
+    source: "King Philip RSD",
+    link: "https://www.kingphilip.org/wp-content/uploads/2021/05/Multiple-Intelligences-Survey.pdf"
   },
 ];
 
