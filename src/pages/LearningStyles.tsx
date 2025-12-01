@@ -201,9 +201,11 @@ export default function LearningStyles() {
                   <CardTitle className="text-base">{download.name}</CardTitle>
                   <CardDescription>
                     <div>Format: {download.format}</div>
-                    <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                      {download.source}
-                    </a>
+                    <div className="text-sm">
+                      Source: <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                        {download.source}
+                      </a>
+                    </div>
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
