@@ -120,14 +120,14 @@ export default function CriticalThinking() {
             {videos.map((video) => (
               <Card key={video.title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col">
                 <CardHeader className="flex-shrink-0">
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex items-start justify-between mb-2 min-h-[3.5rem]">
                     <CardTitle className="text-lg leading-tight">{video.title}</CardTitle>
                     <Badge variant="secondary" className="ml-2 shrink-0 flex items-center gap-1">
                       <Clock className="h-3 w-3" />
                       {video.duration}
                     </Badge>
                   </div>
-                  <CardDescription className="line-clamp-3">{video.description}</CardDescription>
+                  <CardDescription className="min-h-[3rem]">{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden">
