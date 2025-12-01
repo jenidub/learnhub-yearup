@@ -12,7 +12,7 @@ const videos = [
     link: "https://www.youtube.com/watch?v=xwsLuxlbY2w",
   },
   {
-    title: "10 Time Management Tips to Boost Your Productivity",
+    title: "10 Tips to Boost Productivity",
     duration: "3:47",
     description: "This video explores 10 easy-to-follow time management tips that will help you focus, create a plan, and stick to it.",
     link: "https://www.youtube.com/watch?v=xgp6eELYY1M",
