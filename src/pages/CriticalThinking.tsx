@@ -57,7 +57,7 @@ const articles = [
     link: "https://www.psychologytoday.com/us/tests/career/creative-problem-solving-test",
   },
   {
-    title: "Creative Problem Solving and Decision Making Techniques",
+    title: "Creative Problem Solving & Decision Making",
     type: "Course",
     source: "Pluralsight",
     link: "https://app.pluralsight.com/library/courses/creative-problem-solving-decision-techniques/table-of-contents",
@@ -221,15 +221,15 @@ export default function CriticalThinking() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.map((article) => (
-              <Card key={article.title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <CardHeader>
+              <Card key={article.title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <CardHeader className="flex-grow">
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
                   <CardDescription className="text-sm">Source: {article.source}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="mt-auto">
                   <Button asChild variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
                     <a href={article.link} target="_blank" rel="noopener noreferrer">
                       Read More
