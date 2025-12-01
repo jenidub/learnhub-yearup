@@ -20,7 +20,7 @@ const videos = [
   {
     title: "The Secret to Note-taking for Busy People by Leila Gharani",
     duration: "7:04",
-    description: "Check out the tips about notetaking that you can develop in Year Up and practice in WBE and in your career",
+    description: "Check out the tips about notetaking that you can practice at Year Up and continue to use in your career",
     link: "https://www.youtube.com/watch?v=yxHPScN_ct4",
   },
 ];
