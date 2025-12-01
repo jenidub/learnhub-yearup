@@ -12,7 +12,7 @@ const videos = [
     link: "https://www.youtube.com/watch?v=QUvXFEV17sk"
   },
   {
-    title: "3 Tips for Clear and Concise Writing: How to Improve Your Writing",
+    title: "3 Tips for Clear & Concise Writing",
     duration: "6:55",
     description: "Tips to achieve clear and concise writing to share your points faster and have more impact",
     link: "https://www.youtube.com/watch?v=H3tw-qqnwj4"
