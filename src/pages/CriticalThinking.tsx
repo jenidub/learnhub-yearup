@@ -65,7 +65,7 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "UConnect Decision-Making Matrix", format: "PDF", source: "UConnect Labs", link: "https://cdn.uconnectlabs.com/wp-content/uploads/sites/244/2025/02/Life-Design-Decision-Matrix-Worksheet-.pdf" },
+  { name: "UConnect Decision-Making Matrix Worksheet", format: "PDF", source: "UConnect Labs", link: "https://cdn.uconnectlabs.com/wp-content/uploads/sites/244/2025/02/Life-Design-Decision-Matrix-Worksheet-.pdf" },
   { name: "McKinsey 7S Problem-Solving Framework", format: "Image", source: "Slideworks", link: "https://slideworks-website.s3.eu-west-1.amazonaws.com/7_step_problem_solving_process_a97066dafb.png" },
   { name: "5 Whys Root Cause Analysis Template", format: "PDF", source: "State of Michigan", link: "https://www.michigan.gov/-/media/Project/Websites/mde/2020/04/02/5_Whys_Worksheet.pdf?rev=1a4a151a2fbf4e56a0f88dd1ad43452f" },
   { name: "Ultimate Cheatsheet for Critical Thinking", format: "PDF", source: "Association of American Law Schools", link: "https://am.aals.org/wp-content/uploads/sites/4/2020/01/AM20LawMedicineHealthPovertyPierson-BrownGraphics.pdf" },
