@@ -6,19 +6,22 @@ import { Lightbulb, Video, FileText, Download, Clock, ExternalLink, ArrowUp } fr
 
 const videos = [
   {
-    title: "Introduction to Critical Thinking",
-    duration: "6 min",
-    description: "Understand the fundamentals of analyzing information objectively and making reasoned judgments.",
+    title: "What Is Critical Thinking?",
+    duration: "2:34",
+    description: "Overview of what critical thinking is and why it's important",
+    link: "https://www.youtube.com/watch?v=-eEBuqwY-nE",
   },
   {
-    title: "Problem-Solving Framework",
-    duration: "7 min",
-    description: "Learn a systematic approach to breaking down complex problems and finding solutions.",
+    title: "5 Tips to Improve Your Critical Thinking",
+    duration: "4:29",
+    description: "Samantha Agoos describes a 5-step process that may help you with any number of problems.",
+    link: "https://www.youtube.com/watch?v=dItUGF8GdTw",
   },
   {
-    title: "Identifying Logical Fallacies",
-    duration: "8 min",
-    description: "Recognize common errors in reasoning to strengthen your analytical skills.",
+    title: "SOLVE Complex Problems With The 7-Step McKinsey Framework",
+    duration: "4:31",
+    description: "While it might seem like some people are just born with stronger problem-solving skills, there are strategies that anyone can use to improve them.",
+    link: "https://www.youtube.com/watch?v=mzDModXLH90",
   },
 ];
 
@@ -127,11 +130,22 @@ export default function CriticalThinking() {
                   <CardDescription>{video.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <Video className="h-12 w-12 text-muted-foreground" />
+                  <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${video.link.split('v=')[1]}`}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    ></iframe>
                   </div>
-                  <Button className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
-                    Watch Video
+                  <Button asChild className="w-full mt-4 group-hover:bg-primary group-hover:text-primary-foreground">
+                    <a href={video.link} target="_blank" rel="noopener noreferrer">
+                      Watch on YouTube
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
