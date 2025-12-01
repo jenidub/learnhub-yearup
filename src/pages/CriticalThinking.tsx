@@ -27,40 +27,22 @@ const videos = [
 
 const articles = [
   {
-    title: "Critical Thinking in Practice",
+    title: "The McKinsey Guide to Problem Solving Resource Guide",
+    type: "Website",
+    source: "McKinsey Consultants",
+    link: "https://www.mckinsey.com/featured-insights/mckinsey-guide-to-problem-solving",
+  },
+  {
+    title: "McKinsey Approach to Problem Solving Full Guide",
+    type: "Website",
+    source: "Umbrex Consulting",
+    link: "https://umbrex.com/resources/mckinsey-problem-solving/",
+  },
+  {
+    title: "Solving Problems with Creative and Critical Thinking",
     type: "Course",
-    duration: "2 hours",
-    source: "Coursera",
-  },
-  {
-    title: "Decision-Making Strategies",
-    type: "Article",
-    duration: "12 min read",
-    source: "Harvard Business Review",
-  },
-  {
-    title: "Analytical Reasoning Guide",
-    type: "Guide",
-    duration: "15 min read",
-    source: "MIT OpenCourseWare",
-  },
-  {
-    title: "Creative Problem Solving",
-    type: "Article",
-    duration: "10 min read",
-    source: "Psychology Today",
-  },
-  {
-    title: "Logic and Reasoning Course",
-    type: "Course",
-    duration: "3 hours",
-    source: "Khan Academy",
-  },
-  {
-    title: "Systems Thinking Approach",
-    type: "Guide",
-    duration: "18 min read",
-    source: "Learning Center",
+    source: "IBM via Coursera",
+    link: "https://www.coursera.org/learn/solving-problems-with-creative-and-critical-thinking",
   },
 ];
 
@@ -225,18 +207,16 @@ export default function CriticalThinking() {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {article.duration}
-                    </Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
                   <CardDescription className="text-sm">Source: {article.source}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
+                  <Button asChild variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                    <a href={article.link} target="_blank" rel="noopener noreferrer">
+                      Read More
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
