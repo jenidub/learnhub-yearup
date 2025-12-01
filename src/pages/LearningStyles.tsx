@@ -27,40 +27,34 @@ const videos = [
 
 const articles = [
   {
-    title: "Learning Styles Assessment",
-    type: "Course",
-    duration: "1 hour",
-    source: "Coursera",
+    title: "Gardner's Theory of Multiple Intelligences",
+    type: "Website",
+    source: "Simply Psychology",
+    link: "https://www.simplypsychology.org/multiple-intelligences.html",
   },
   {
-    title: "ADHD Study Strategies",
-    type: "Article",
-    duration: "12 min read",
-    source: "CHADD",
-  },
-  {
-    title: "Kinesthetic Learning Guide",
+    title: "The Science Of Learning",
     type: "Guide",
-    duration: "10 min read",
-    source: "Learning Center",
+    source: "Washington Tech",
+    link: "https://www.washingtontech.edu/the-science-of-learning-exploring-the-4-most-common-learning-styles/",
   },
   {
-    title: "Auditory Learning Techniques",
-    type: "Article",
-    duration: "8 min read",
-    source: "Education Corner",
-  },
-  {
-    title: "Neurodiversity in Education",
-    type: "Course",
-    duration: "2 hours",
-    source: "edX",
-  },
-  {
-    title: "Accommodations and Tools Guide",
+    title: "Guide to Understanding Visual Learners",
     type: "Guide",
-    duration: "15 min read",
-    source: "Academic Success Center",
+    source: "SimpleK12",
+    link: "https://www.simplek12.com/blog/visual-learning",
+  },
+  {
+    title: "Guide to Understanding Auditory Learners",
+    type: "Guide",
+    source: "Simple K12",
+    link: "https://www.simplek12.com/blog/auditory-learning-style",
+  },
+  {
+    title: "Guide to Understanding Kinesthetic Learners",
+    type: "Guide",
+    source: "Simple K12",
+    link: "https://www.simplek12.com/blog/kinesthetic-learning-style",
   },
 ];
 
@@ -243,19 +237,21 @@ export default function LearningStyles() {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {article.duration}
-                    </Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
-                  <CardDescription className="text-sm">Source: {article.source}</CardDescription>
+                  <CardDescription className="text-sm">
+                    Source: <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {article.source}
+                    </a>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
+                  <a href={article.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      View Resource
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
