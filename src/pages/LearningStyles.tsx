@@ -72,7 +72,7 @@ const downloads = [
     link: "https://vark-learn.com/the-vark-questionnaire"
   },
   { 
-    name: "Learning Styles Tips and Strategies", 
+    name: "Learning Styles Tips & Strategies", 
     format: "PDF", 
     source: "Florida State University",
     link: "https://ace.fsu.edu/sites/g/files/upcbnu296/files/Study_Strategies_by_Learning_Styles.pdf"
