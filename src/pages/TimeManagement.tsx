@@ -65,10 +65,10 @@ const articles = [
 ];
 
 const downloads = [
-  { name: "Daily Time Blocking Template", format: "PDF" },
-  { name: "Weekly Schedule Planner", format: "Excel" },
-  { name: "Goal Setting Worksheet", format: "PDF" },
-  { name: "Productivity Tracker", format: "Excel" },
+  { name: "The Pomodoro Technique Guide", format: "PDF", source: "Amherst College", link: "https://www.amherst.edu/system/files/media/Pomodoro%2520Guide_0.pdf" },
+  { name: "Time Blocking Scheduling Worksheet", format: "PDF", source: "Upper Iowa University", link: "https://uiu.edu/wp-content/uploads/Time-Management-Worksheet.pdf" },
+  { name: "SMART Goal Worksheet", format: "PDF", source: "Johns Hopkins University", link: "https://krieger.jhu.edu/academic-support/wp-content/uploads/sites/91/2021/01/Worksheet-for-SMART-Goal-Setting-21.pdf" },
+  { name: "Free Planner Printables", format: "PDF", source: "Day Designer", link: "https://daydesigner.com/collections/printable-library?srsltid=AfmBOoqaPkuSnaZGgCHuLwFSu8bMw0PS6EGVf9HoW6jxBikM4ZiI4wNR" },
 ];
 
 export default function TimeManagement() {
@@ -176,13 +176,20 @@ export default function TimeManagement() {
                     </div>
                   </div>
                   <CardTitle className="text-base">{download.name}</CardTitle>
-                  <CardDescription>Format: {download.format}</CardDescription>
+                  <CardDescription>
+                    <span className="block">Format: {download.format}</span>
+                    <a href={download.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Source: {download.source}
+                    </a>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
-                  </Button>
+                  <a href={download.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
