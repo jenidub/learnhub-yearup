@@ -44,6 +44,24 @@ const articles = [
     source: "300 Hours",
     link: "https://300hours.com/productive-habits/",
   },
+  {
+    title: "Time Management Apps for Students",
+    type: "Guide",
+    source: "William & Mary University",
+    link: "https://www.wm.edu/offices/studentsuccess/studentaccessibilityservices/resources/studentresources/apps/",
+  },
+  {
+    title: "10 Strategies for Better Time Management",
+    type: "Website",
+    source: "University of Georgia",
+    link: "https://fieldreport.caes.uga.edu/publications/C1042/time-management-10-strategies-for-better-time-management/",
+  },
+  {
+    title: "8 Time Management Tips for Students",
+    type: "Guide",
+    source: "Harvard Summer School",
+    link: "https://summer.harvard.edu/blog/8-time-management-tips-for-students/",
+  },
 ];
 
 const downloads = [
