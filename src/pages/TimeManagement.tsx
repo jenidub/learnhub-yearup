@@ -66,7 +66,7 @@ const articles = [
 
 const downloads = [
   { name: "The Pomodoro Technique Guide", format: "PDF", source: "Amherst College", link: "https://www.amherst.edu/system/files/media/Pomodoro%2520Guide_0.pdf" },
-  { name: "Time Blocking Scheduling Worksheet", format: "PDF", source: "Upper Iowa University", link: "https://uiu.edu/wp-content/uploads/Time-Management-Worksheet.pdf" },
+  { name: "Time Block Scheduling", format: "PDF", source: "Upper Iowa University", link: "https://uiu.edu/wp-content/uploads/Time-Management-Worksheet.pdf" },
   { name: "SMART Goal Worksheet", format: "PDF", source: "Johns Hopkins University", link: "https://krieger.jhu.edu/academic-support/wp-content/uploads/sites/91/2021/01/Worksheet-for-SMART-Goal-Setting-21.pdf" },
   { name: "Free Planner Printables", format: "PDF", source: "Day Designer", link: "https://daydesigner.com/collections/printable-library?srsltid=AfmBOoqaPkuSnaZGgCHuLwFSu8bMw0PS6EGVf9HoW6jxBikM4ZiI4wNR" },
 ];
