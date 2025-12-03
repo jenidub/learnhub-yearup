@@ -28,39 +28,21 @@ const videos = [
 const articles = [
   {
     title: "Time Management Mastery",
-    type: "Course",
-    duration: "2 hours",
-    source: "LinkedIn Learning",
+    type: "Free Course",
+    source: "Alison",
+    link: "https://alison.com/course/time-management-mastery",
   },
   {
-    title: "Priority Matrix Framework",
-    type: "Article",
-    duration: "10 min read",
-    source: "Harvard Business Review",
-  },
-  {
-    title: "Building Productive Habits",
+    title: "The Eisenhower Matrix",
     type: "Guide",
-    duration: "12 min read",
-    source: "Productivity Center",
+    source: "Asana",
+    link: "https://asana.com/resources/eisenhower-matrix",
   },
   {
-    title: "Focus Apps and Tools Guide",
-    type: "Article",
-    duration: "8 min read",
-    source: "TechCrunch",
-  },
-  {
-    title: "Eliminating Time Wasters",
-    type: "Course",
-    duration: "1.5 hours",
-    source: "Coursera",
-  },
-  {
-    title: "Weekly Planning Strategies",
-    type: "Guide",
-    duration: "15 min read",
-    source: "Academic Success Center",
+    title: "A 7-Step Plan To Building Effective Routines",
+    type: "Website",
+    source: "300 Hours",
+    link: "https://300hours.com/productive-habits/",
   },
 ];
 
@@ -220,19 +202,21 @@ export default function TimeManagement() {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge variant="outline">{article.type}</Badge>
-                    <Badge variant="secondary" className="flex items-center gap-1">
-                      <Clock className="h-3 w-3" />
-                      {article.duration}
-                    </Badge>
                   </div>
                   <CardTitle className="text-lg mb-2">{article.title}</CardTitle>
-                  <CardDescription className="text-sm">Source: {article.source}</CardDescription>
+                  <CardDescription className="text-sm">
+                    <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      Source: {article.source}
+                    </a>
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
-                    Read More
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
+                  <a href={article.link} target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" className="w-full group-hover:bg-primary group-hover:text-primary-foreground">
+                      Read More
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
