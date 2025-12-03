@@ -39,7 +39,7 @@ const articles = [
     link: "https://asana.com/resources/eisenhower-matrix",
   },
   {
-    title: "A 7-Step Plan To Building Effective Routines",
+    title: "7 Steps to Build Effective Routines",
     type: "Website",
     source: "300 Hours",
     link: "https://300hours.com/productive-habits/",
@@ -51,7 +51,7 @@ const articles = [
     link: "https://www.wm.edu/offices/studentsuccess/studentaccessibilityservices/resources/studentresources/apps/",
   },
   {
-    title: "10 Strategies for Better Time Management",
+    title: "10 Strategies for Time Management",
     type: "Website",
     source: "University of Georgia",
     link: "https://fieldreport.caes.uga.edu/publications/C1042/time-management-10-strategies-for-better-time-management/",
