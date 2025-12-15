@@ -104,20 +104,12 @@ export default function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            {navItems.slice(1).map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={cn(
-                  "px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                  location.pathname === item.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary hover:text-primary"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {/* Get Help - Disabled */}
+            <span
+              className="px-3 py-2 rounded-md text-sm font-medium text-muted-foreground cursor-not-allowed opacity-50"
+            >
+              Get Help
+            </span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -178,22 +170,12 @@ export default function Navigation() {
                 );
               })}
 
-            {/* Other Nav Items */}
-            {navItems.slice(1).map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  "px-4 py-3 rounded-md text-sm font-medium transition-colors",
-                  location.pathname === item.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary hover:text-primary"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {/* Get Help - Disabled */}
+            <span
+              className="px-4 py-3 rounded-md text-sm font-medium text-muted-foreground cursor-not-allowed opacity-50"
+            >
+              Get Help
+            </span>
             </div>
           </div>
         )}
