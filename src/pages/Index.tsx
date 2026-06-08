@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import SectionCard from "@/components/SectionCard";
-import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rocket, Wrench, HelpCircle, GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rocket, Wrench, HelpCircle, GraduationCap, Star } from "lucide-react";
 
 const sections = [
   {

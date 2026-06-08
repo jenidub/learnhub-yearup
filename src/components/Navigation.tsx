@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap } from "lucide-react";
+import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
