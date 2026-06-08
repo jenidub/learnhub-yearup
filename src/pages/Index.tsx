@@ -1,6 +1,10 @@
 import Navigation from "@/components/Navigation";
 import SectionCard from "@/components/SectionCard";
-import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rocket, Wrench, HelpCircle, GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rocket, Wrench, HelpCircle, GraduationCap, Star } from "lucide-react";
+
+// TODO: Replace with the Microsoft Forms link once available
+const RATING_FORM_URL = "#";
 
 const sections = [
   {
@@ -151,9 +155,18 @@ export default function Index() {
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
               Your comprehensive academic support platform for success in Year Up's flipped classroom environment
             </p>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Everything you need to study smarter, not harder. Access curated resources, expert tutoring, and proven strategies designed specifically for Year Up learners.
             </p>
+            <a
+              href={RATING_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-base font-medium bg-white text-primary hover:bg-white/90 transition-colors"
+            >
+              <Star className="h-5 w-5" />
+              Submit a Rating
+            </a>
           </div>
         </div>
       </section>

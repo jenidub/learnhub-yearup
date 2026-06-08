@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap } from "lucide-react";
+import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -23,6 +23,9 @@ const navItems = [
   { name: "Home", path: "/" },
   { name: "Get Help", path: "/get-help" },
 ];
+
+// TODO: Replace with the Microsoft Forms link once available
+const RATING_FORM_URL = "#";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -110,6 +113,17 @@ export default function Navigation() {
             >
               Get Help
             </span>
+
+            {/* Submit a Rating */}
+            <a
+              href={RATING_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            >
+              <Star className="h-4 w-4" />
+              Submit a Rating
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -176,6 +190,17 @@ export default function Navigation() {
             >
               Get Help
             </span>
+
+            {/* Submit a Rating */}
+            <a
+              href={RATING_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-3 rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            >
+              <Star className="h-4 w-4" />
+              Submit a Rating
+            </a>
             </div>
           </div>
         )}
