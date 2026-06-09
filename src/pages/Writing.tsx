@@ -120,6 +120,16 @@ export default function Writing() {
                   Other Resources
                 </Button>
               </a>
+              <a
+                href={RATING_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-white text-foreground border-0 hover:bg-white/90 transition-opacity px-6 py-3 gap-2">
+                  <Star className="h-4 w-4" />
+                  Submit a Rating
+                </Button>
+              </a>
             </div>
           </div>
         </div>
