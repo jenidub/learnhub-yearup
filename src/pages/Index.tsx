@@ -3,8 +3,7 @@ import SectionCard from "@/components/SectionCard";
 import { Button } from "@/components/ui/button";
 import { BookOpen, FileText, MessageSquare, Lightbulb, Clock, Brain, Users, Rocket, Wrench, HelpCircle, GraduationCap, Star } from "lucide-react";
 
-// TODO: Replace with the Microsoft Forms link once available
-const RATING_FORM_URL = "#";
+const RATING_FORM_URL = "https://forms.office.com/r/YkHnhbTY0B";
 
 const sections = [
   {
