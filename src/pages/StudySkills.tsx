@@ -2,7 +2,9 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Video, FileText, Download, Clock, ExternalLink, ArrowUp } from "lucide-react";
+import { BookOpen, Video, FileText, Download, Clock, ExternalLink, ArrowUp, Star } from "lucide-react";
+
+const RATING_FORM_URL = "https://forms.office.com/r/YkHnhbTY0B";
 
 const videos = [
   {
@@ -109,6 +111,16 @@ export default function StudySkills() {
               <a href="#courses">
                 <Button className="bg-gradient-green text-white border-0 hover:opacity-90 transition-opacity px-6 py-3">
                   Other Resources
+                </Button>
+              </a>
+              <a
+                href={RATING_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-white text-foreground border-0 hover:bg-white/90 transition-opacity px-6 py-3 gap-2">
+                  <Star className="h-4 w-4" />
+                  Submit a Rating
                 </Button>
               </a>
             </div>
