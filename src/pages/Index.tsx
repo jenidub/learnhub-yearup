@@ -152,7 +152,7 @@ export default function Index() {
               Welcome to the<br />Learner Resources Hub
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-              Your comprehensive academic support platform for success in Year Up's flipped classroom environment
+              Set Yourself Up for Success at Year Up
             </p>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
               Everything you need to study smarter, not harder. Access curated resources, expert tutoring, and proven strategies designed specifically for Year Up learners.
