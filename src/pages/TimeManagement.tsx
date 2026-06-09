@@ -2,7 +2,9 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Video, FileText, Download, ExternalLink, ArrowUp } from "lucide-react";
+import { Clock, Video, FileText, Download, ExternalLink, ArrowUp, Star } from "lucide-react";
+
+const RATING_FORM_URL = "https://forms.office.com/r/YkHnhbTY0B";
 
 const videos = [
   {
