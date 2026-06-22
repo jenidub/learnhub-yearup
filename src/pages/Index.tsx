@@ -22,7 +22,7 @@ const sections = [
     comingSoon: true,
   },
   {
-    title: "Learning Strategies & Approaches",
+    title: "Learning Strategies",
     description: "Discover your unique learning style and access tailored strategies for success.",
     features: [
       "Learning style assessments",
@@ -33,8 +33,7 @@ const sections = [
     icon: <Brain />,
     link: "/learning-strategies",
     gradient: "bg-gradient-teal",
-    isNew: true,
-    buttonLabel: "Explore Learning Strategies",
+    comingSoon: true,
   },
   {
     title: "Study Skills",
