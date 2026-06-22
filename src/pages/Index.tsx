@@ -22,7 +22,7 @@ const sections = [
     comingSoon: true,
   },
   {
-    title: "Learning Styles",
+    title: "Learning Strategies & Approaches",
     description: "Discover your unique learning style and access tailored strategies for success.",
     features: [
       "Learning style assessments",
