@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, Brain, GraduationCap, Star } from "lucide-react";
+import { Menu, X, BookOpen, ChevronDown, FileText, MessageSquare, Lightbulb, Clock, GraduationCap, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 
 const topicItems = [
   { name: "Critical Thinking", path: "/critical-thinking", icon: Lightbulb, gradient: "bg-gradient-green" },
-  { name: "Learning Strategies", path: "/learning-strategies", icon: Brain, gradient: "bg-gradient-teal" },
+  
   { name: "Study Skills", path: "/study-skills", icon: BookOpen, gradient: "bg-gradient-purple" },
   { name: "Time Management", path: "/time-management", icon: Clock, gradient: "bg-gradient-orange" },
   { name: "Writing", path: "/writing", icon: MessageSquare, gradient: "bg-gradient-blue" },
