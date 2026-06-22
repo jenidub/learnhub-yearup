@@ -105,7 +105,7 @@ export default function LearningStyles() {
             <div className="mb-4 text-6xl">
               <Brain className="h-16 w-16 mx-auto" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Learning Styles</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Learning Strategies & Approaches</h1>
             <p className="text-xl text-white/90 mb-8">
               Discover your unique learning style and access tailored strategies for success
             </p>
