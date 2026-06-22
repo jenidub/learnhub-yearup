@@ -14,6 +14,7 @@ interface SectionCardProps {
   gradient: string;
   isNew?: boolean;
   comingSoon?: boolean;
+  buttonLabel?: string;
 }
 
 export default function SectionCard({
@@ -25,6 +26,7 @@ export default function SectionCard({
   gradient,
   isNew = false,
   comingSoon = false,
+  buttonLabel,
 }: SectionCardProps) {
   const cardContent = (
     <Card
@@ -72,7 +74,7 @@ export default function SectionCard({
               className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
               variant="secondary"
             >
-              Explore {title}
+              {buttonLabel || `Explore ${title}`}
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           )}
