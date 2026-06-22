@@ -31,7 +31,7 @@ const sections = [
       "Accommodation tools and guides",
     ],
     icon: <Brain />,
-    link: "/learning-styles",
+    link: "/learning-strategies",
     gradient: "bg-gradient-teal",
     isNew: true,
   },
