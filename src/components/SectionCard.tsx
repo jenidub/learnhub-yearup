@@ -14,6 +14,7 @@ interface SectionCardProps {
   gradient: string;
   isNew?: boolean;
   comingSoon?: boolean;
+  buttonLabel?: string;
 }
 
 export default function SectionCard({
@@ -25,6 +26,7 @@ export default function SectionCard({
   gradient,
   isNew = false,
   comingSoon = false,
+  buttonLabel,
 }: SectionCardProps) {
   const cardContent = (
     <Card
