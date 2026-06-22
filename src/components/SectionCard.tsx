@@ -74,7 +74,7 @@ export default function SectionCard({
               className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
               variant="secondary"
             >
-              Explore {title}
+              {buttonLabel || `Explore ${title}`}
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           )}
