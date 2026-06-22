@@ -23,8 +23,7 @@ const navItems = [
   { name: "Get Help", path: "/get-help" },
 ];
 
-// TODO: Replace with the Microsoft Forms link once available
-const RATING_FORM_URL = "#";
+const RATING_FORM_URL = "https://forms.office.com/r/YkHnhbTY0B";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
