@@ -34,6 +34,7 @@ const sections = [
     link: "/learning-strategies",
     gradient: "bg-gradient-teal",
     isNew: true,
+    buttonLabel: "Explore Learning Strategies",
   },
   {
     title: "Study Skills",
