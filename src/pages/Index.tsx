@@ -47,7 +47,6 @@ const sections = [
     icon: <Clock />,
     link: "/time-management",
     gradient: "bg-gradient-orange",
-    isNew: true,
   },
   {
     title: "Writing & Communication",
