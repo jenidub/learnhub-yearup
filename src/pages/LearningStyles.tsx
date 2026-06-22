@@ -97,6 +97,35 @@ const downloads = [
 ];
 
 export default function LearningStyles() {
+  if (isComingSoon) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <section className="relative overflow-hidden bg-gradient-teal text-white py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="mb-4 text-6xl">
+                <Brain className="h-16 w-16 mx-auto" />
+              </div>
+              <Badge className="mb-4 bg-white/20 text-white border-0 text-base px-4 py-1">
+                Coming Soon
+              </Badge>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Learning Strategies</h1>
+              <p className="text-xl text-white/90 mb-8">
+                We're updating our resources. Check back soon for new learning strategies and approaches.
+              </p>
+              <Link to="/">
+                <Button className="bg-white text-foreground border-0 hover:bg-white/90 transition-opacity px-6 py-3">
+                  Back to Home
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background" id="top">
       <Navigation />
