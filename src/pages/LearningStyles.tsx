@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Brain, Video, FileText, Download, Clock, ExternalLink, ArrowUp, Star } from "lucide-react";
 
 const RATING_FORM_URL = "https://forms.office.com/r/YkHnhbTY0B";
+const isComingSoon = true;
+
 
 const videos = [
   {
