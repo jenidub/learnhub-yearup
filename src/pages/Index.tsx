@@ -28,7 +28,7 @@ const sections = [
       "Quick tips video tutorials",
       "Recommended courses and articles",
       "Downloadable study planners and trackers",
-      "Learning style assessments",
+      "Note-taking and active recall techniques",
     ],
     icon: <BookOpen />,
     link: "/study-skills",
@@ -80,9 +80,9 @@ const sections = [
   },
   {
     title: "Learning Strategies",
-    description: "Discover your unique learning style and access tailored strategies for success.",
+    description: "Discover effective strategies tailored to your success.",
     features: [
-      "Learning style assessments",
+      "Self-assessment tools",
       "ADHD and neurodivergent strategies",
       "Visual, auditory, and kinesthetic resources",
       "Accommodation tools and guides",
@@ -174,7 +174,7 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="text-3xl font-bold mb-4 text-foreground">Study Smarter, Not Harder</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The Learner Resources Hub brings together the best tools, strategies, and support services to help you thrive in your academic journey. Whether you need help with time management, test preparation, or understanding your learning style, we've got you covered.
+              The Learner Resources Hub brings together the best tools, strategies, and support services to help you thrive in your academic journey. Whether you need help with time management, test preparation, or understanding how you learn best, we've got you covered.
             </p>
           </div>
         </div>
